@@ -83,7 +83,7 @@
     "birthDate": "วันเกิด",
     "birthDateHint": "โปรดเพิ่มวันเกิดของคุณ",
     "nickName": "ชื่อเล่น",
-    "nickNameHint": "กรุณาใส่ชื่อเล่น"
+    "nickNameHint": "แก้ไขโปรไฟล์"
   },
   "ProfileSettingScreen": {
     "loadingText": "มุ่งมั่นเรียนรู้ไปกับ Study Duck..."

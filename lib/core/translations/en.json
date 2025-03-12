@@ -83,7 +83,7 @@
     "birthDate": "Date of birth",
     "birthDateHint": "Register your date of birth",
     "nickName": "Nickname",
-    "nickNameHint": "Enter your nickname"
+    "nickNameHint": "Edit Profile"
   },
   "ProfileSettingScreen": {
     "loadingText": "Doing your best today with Study Duck..."

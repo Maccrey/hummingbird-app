@@ -83,7 +83,7 @@
     "birthDate": "Ngày sinh",
     "birthDateHint": "Hãy nhập ngày sinh của bạn",
     "nickName": "Biệt danh",
-    "nickNameHint": "Nhập biệt danh của bạn"
+    "nickNameHint": "Chỉnh sửa hồ sơ"
   },
   "ProfileSettingScreen": {
     "loadingText": "Hãy cố gắng hết mình cùng với Study Duck..."

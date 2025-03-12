@@ -83,7 +83,7 @@
     "birthDate": "생년월일",
     "birthDateHint": "생년월일을 등록해 보세요",
     "nickName": "닉네임",
-    "nickNameHint": "닉네임을 입력하세요"
+    "nickNameHint": "프로필 변경"
   },
   "ProfileSettingScreen": {
     "loadingText": "오늘도 최선을 다해서 Study Duck과 함께..."
