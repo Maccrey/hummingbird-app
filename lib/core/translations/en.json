@@ -83,7 +83,9 @@
     "birthDate": "Date of birth",
     "birthDateHint": "Register your date of birth",
     "nickName": "Nickname",
-    "nickNameHint": "Edit Profile"
+    "nickNameHint": "Edit Profile",
+    "save": "SAVE",
+    "mbtiTest": "MBTI Test"
   },
   "ProfileSettingScreen": {
     "loadingText": "Doing your best today with Study Duck..."

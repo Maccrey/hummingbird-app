@@ -83,7 +83,9 @@
     "birthDate": "Ngày sinh",
     "birthDateHint": "Hãy nhập ngày sinh của bạn",
     "nickName": "Biệt danh",
-    "nickNameHint": "Chỉnh sửa hồ sơ"
+    "nickNameHint": "Chỉnh sửa hồ sơ",
+    "save": "Lưu",
+    "mbtiTest": "Bài kiểm tra MBTI"
   },
   "ProfileSettingScreen": {
     "loadingText": "Hãy cố gắng hết mình cùng với Study Duck..."

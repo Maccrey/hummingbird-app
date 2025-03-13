@@ -1,7 +1,12 @@
-import 'package:flutter/material.dart';
+import 'dart:io';
 
-class ProfileImageWidget extends StatelessWidget {
-  const ProfileImageWidget({
+import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
+
+import '../../../../viewmodels/image_controller.dart';
+
+class ProfileImageWidget extends StatefulWidget {
+  ProfileImageWidget({
     super.key,
     required this.radius,
   });
@@ -9,17 +14,31 @@ class ProfileImageWidget extends StatelessWidget {
   final double radius;
 
   @override
+  State<ProfileImageWidget> createState() => _ProfileImageWidgetState();
+}
+
+class _ProfileImageWidgetState extends State<ProfileImageWidget> {
+  XFile? selectedImage; // 클래스 레벨로 이동
+
+  @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         GestureDetector(
-          onTap: () {
-            // Todo : 프로필 사진 변경 로직 추가
-            print('프로필 사진 변경');
+          onTap: () async {
+            final image = await ImageController().pickImageFromGallery();
+            if (image != null) {
+              setState(() {
+                selectedImage = image;
+              });
+            }
           },
           child: CircleAvatar(
-            radius: radius,
-            backgroundImage: AssetImage('lib/core/imgs/images/StudyDuck.png'),
+            radius: widget.radius,
+            backgroundImage: selectedImage != null
+                ? FileImage(File(selectedImage!.path))
+                : const AssetImage('lib/core/imgs/images/StudyDuck.png')
+                    as ImageProvider,
           ),
         ),
         Positioned(
@@ -30,11 +49,11 @@ class ProfileImageWidget extends StatelessWidget {
               // 프로필 사진 변경 로직 추가
             },
             child: CircleAvatar(
-              radius: radius * 0.3,
+              radius: widget.radius * 0.3,
               backgroundColor: Colors.transparent,
               child: Icon(
                 Icons.camera_alt,
-                size: radius * 0.3,
+                size: widget.radius * 0.3,
                 color: Colors.black,
               ),
             ),

@@ -83,7 +83,9 @@
     "birthDate": "생년월일",
     "birthDateHint": "생년월일을 등록해 보세요",
     "nickName": "닉네임",
-    "nickNameHint": "프로필 변경"
+    "nickNameHint": "프로필 변경",
+    "save": "저장",
+    "mbtiTest": "MBTI 테스트"
   },
   "ProfileSettingScreen": {
     "loadingText": "오늘도 최선을 다해서 Study Duck과 함께..."
