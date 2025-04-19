@@ -42,50 +42,121 @@ class HomeScreen extends ConsumerStatefulWidget {
       _HomeScreenState(); // Change to ConsumerState
 }
 
-class _HomeScreenState extends ConsumerState<HomeScreen> {
-  // Change to ConsumerState
+class _HomeScreenState extends ConsumerState<HomeScreen>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _animationController;
+  bool _isDrawerOpen = false;
+
   @override
   void initState() {
     super.initState();
-    // 위젯이 처음 생성될 때 _showBottomSheet 함수를 호출합니다. (타이머가 실행 중이지 않을 때만)
-    WidgetsBinding.instance.addPostFrameCallback((_) {});
+    _animationController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1500),
+    );
+    _startDrawerAnimation();
+  }
+
+  void _startDrawerAnimation() {
+    Future.delayed(const Duration(milliseconds: 500), () {
+      _animationController.repeat();
+    });
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      initialIndex: 0,
-      length: _tabs.length,
-      child: Scaffold(
-        appBar: AppBar(
-          automaticallyImplyLeading: false,
-          title: Container(
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: AppColor.themeGrey,
-                width: 1.w,
+    return WillPopScope(
+      onWillPop: () async {
+        if (_isDrawerOpen) {
+          Navigator.of(context).pop();
+          return false;
+        }
+        return false;
+      },
+      child: DefaultTabController(
+        initialIndex: 0,
+        length: _tabs.length,
+        child: Scaffold(
+          appBar: AppBar(
+            automaticallyImplyLeading: false,
+            title: Container(
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: AppColor.themeGrey,
+                  width: 1.w,
+                ),
+                borderRadius: BorderRadius.circular(8),
               ),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: SegmentedTabControl(
-              selectedTabTextColor: Colors.black,
-              tabPadding: EdgeInsets.zero,
-              height: 36.h,
-              tabs: _tabs,
+              child: SegmentedTabControl(
+                selectedTabTextColor: Colors.black,
+                tabPadding: EdgeInsets.zero,
+                height: 36.h,
+                tabs: _tabs,
+              ),
             ),
           ),
-        ),
-        drawer: DrewerWhiteNoiseController(),
-        body: SafeArea(
-          child: TabBarView(
+          drawer: DrewerWhiteNoiseController(),
+          drawerScrimColor: Colors.black54,
+          drawerEdgeDragWidth: 60.w,
+          onDrawerChanged: (isOpened) {
+            setState(() {
+              _isDrawerOpen = isOpened;
+            });
+          },
+          body: Stack(
             children: [
-              Seg1Screen(),
-              Seg2Screen(),
-              Seg3Screen(),
+              SafeArea(
+                child: TabBarView(
+                  children: [
+                    Seg1Screen(),
+                    Seg2Screen(),
+                    Seg3Screen(),
+                  ],
+                ),
+              ),
+              Positioned(
+                left: 0,
+                top: 0,
+                bottom: 0,
+                child: GestureDetector(
+                  onHorizontalDragUpdate: (details) {
+                    if (details.primaryDelta! > 0) {
+                      Scaffold.of(context).openDrawer();
+                    }
+                  },
+                  child: Container(
+                    width: 60.w,
+                    color: Colors.transparent,
+                    child: AnimatedBuilder(
+                      animation: _animationController,
+                      builder: (context, child) {
+                        return Center(
+                          child: Transform.translate(
+                            offset: Offset(
+                                -10 + (10 * _animationController.value), 0),
+                            child: Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.red.withOpacity(
+                                  0.6 * _animationController.value),
+                              size: 24.w,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
+          bottomNavigationBar: BottomNavBar(),
         ),
-        bottomNavigationBar: BottomNavBar(),
       ),
     );
   }
