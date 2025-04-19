@@ -82,6 +82,7 @@ flutter:
     - lib/core/translations/
     - lib/core/imgs/whitenoise/
     - lib/core/imgs/mbti/
+    - lib/core/imgs/country/
 
   fonts:
     - family: NanumPenScript
