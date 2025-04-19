@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/router/bottom_nav_bar.dart';
 import '../../../../core/theme/colors/app_color.dart';
+import '../../white_noise/drawer_white_noise_controller.dart';
 import 'monthly_statistics_screen.dart';
 import 'weekly_statistics_screen.dart';
 
@@ -24,41 +25,118 @@ final List<SegmentTab> _tabs = [
   ),
 ];
 
-class StatisticsScreen extends StatelessWidget {
+class StatisticsScreen extends StatefulWidget {
   const StatisticsScreen({super.key});
 
   @override
+  State<StatisticsScreen> createState() => _StatisticsScreenState();
+}
+
+class _StatisticsScreenState extends State<StatisticsScreen>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _animationController;
+  bool _isDrawerOpen = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _animationController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1500),
+    );
+    _startDrawerAnimation();
+  }
+
+  void _startDrawerAnimation() {
+    Future.delayed(const Duration(milliseconds: 500), () {
+      _animationController.repeat();
+    });
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      length: _tabs.length,
-      initialIndex: 0,
-      child: Scaffold(
-        appBar: AppBar(
-          title: Container(
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: AppColor.themeGrey,
-                width: 1.w,
-              ),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: SegmentedTabControl(
-              selectedTabTextColor: Colors.black,
-              tabPadding: EdgeInsets.zero,
-              height: 36.h,
-              tabs: _tabs,
+    return WillPopScope(
+      onWillPop: () async {
+        if (_isDrawerOpen) {
+          Navigator.of(context).pop();
+          return false;
+        }
+        return false;
+      },
+      child: DefaultTabController(
+        length: 2,
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text(tr("Statistics.Statistics")),
+            backgroundColor: Theme.of(context).colorScheme.surface,
+            scrolledUnderElevation: 0,
+            elevation: 0,
+            bottom: TabBar(
+              tabs: [
+                Tab(text: tr("Statistics.Weekly")),
+                Tab(text: tr("Statistics.Monthly")),
+              ],
             ),
           ),
-        ),
-        body: SafeArea(
-          child: TabBarView(
+          drawer: DrewerWhiteNoiseController(),
+          drawerScrimColor: Colors.black54,
+          drawerEdgeDragWidth: 60.w,
+          onDrawerChanged: (isOpened) {
+            setState(() {
+              _isDrawerOpen = isOpened;
+            });
+          },
+          body: Stack(
             children: [
-              WeeklyStatisticsScreen(),
-              MonthlyStatisticsScreen(),
+              TabBarView(
+                children: [
+                  WeeklyStatisticsScreen(),
+                  MonthlyStatisticsScreen(),
+                ],
+              ),
+              Positioned(
+                left: 0,
+                top: 0,
+                bottom: 0,
+                child: GestureDetector(
+                  onHorizontalDragUpdate: (details) {
+                    if (details.primaryDelta! > 0) {
+                      Scaffold.of(context).openDrawer();
+                    }
+                  },
+                  child: Container(
+                    width: 60.w,
+                    color: Colors.transparent,
+                    child: AnimatedBuilder(
+                      animation: _animationController,
+                      builder: (context, child) {
+                        return Center(
+                          child: Transform.translate(
+                            offset: Offset(
+                                -10 + (10 * _animationController.value), 0),
+                            child: Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.red.withOpacity(
+                                  0.6 * _animationController.value),
+                              size: 24.w,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
+          bottomNavigationBar: BottomNavBar(),
         ),
-        bottomNavigationBar: BottomNavBar(),
       ),
     );
   }
