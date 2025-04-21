@@ -2,10 +2,13 @@ import 'package:StudyDuck/core/widgets/admob_widget.dart';
 import 'package:animated_segmented_tab_control/animated_segmented_tab_control.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/router/bottom_nav_bar.dart';
 import '../../../../core/theme/colors/app_color.dart';
+import '../../../../core/services/whitenoise/audio_service.dart';
+import '../../../models/whitenoise/audio_model.dart';
 import '../../white_noise/drawer_white_noise_controller.dart';
 import 'monthly_statistics_screen.dart';
 import 'weekly_statistics_screen.dart';
@@ -25,17 +28,18 @@ final List<SegmentTab> _tabs = [
   ),
 ];
 
-class StatisticsScreen extends StatefulWidget {
+class StatisticsScreen extends ConsumerStatefulWidget {
   const StatisticsScreen({super.key});
 
   @override
-  State<StatisticsScreen> createState() => _StatisticsScreenState();
+  ConsumerState<StatisticsScreen> createState() => _StatisticsScreenState();
 }
 
-class _StatisticsScreenState extends State<StatisticsScreen>
+class _StatisticsScreenState extends ConsumerState<StatisticsScreen>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   bool _isDrawerOpen = false;
+  bool _isAnyAudioPlaying = false;
 
   @override
   void initState() {
@@ -44,13 +48,6 @@ class _StatisticsScreenState extends State<StatisticsScreen>
       vsync: this,
       duration: const Duration(milliseconds: 1500),
     );
-    _startDrawerAnimation();
-  }
-
-  void _startDrawerAnimation() {
-    Future.delayed(const Duration(milliseconds: 500), () {
-      _animationController.repeat();
-    });
   }
 
   @override
@@ -59,8 +56,28 @@ class _StatisticsScreenState extends State<StatisticsScreen>
     super.dispose();
   }
 
+  void _updateAnimationState(bool isPlaying) {
+    if (isPlaying && !_isDrawerOpen && !_animationController.isAnimating) {
+      _animationController.repeat();
+    } else if (!isPlaying && _animationController.isAnimating) {
+      _animationController.stop();
+      _animationController.reset();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    // 화이트 노이즈 상태 실시간 감시
+    final audioList = ref.watch(multiAudioViewModelProvider);
+    final isAnyAudioPlaying =
+        audioList.any((audio) => audio.playbackState == PlaybackState.playing);
+
+    // 상태가 변경되었을 때만 애니메이션 업데이트
+    if (isAnyAudioPlaying != _isAnyAudioPlaying) {
+      _isAnyAudioPlaying = isAnyAudioPlaying;
+      _updateAnimationState(isAnyAudioPlaying);
+    }
+
     return WillPopScope(
       onWillPop: () async {
         if (_isDrawerOpen) {
@@ -73,15 +90,24 @@ class _StatisticsScreenState extends State<StatisticsScreen>
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            title: Text(tr("Statistics.Statistics")),
+            automaticallyImplyLeading: false,
             backgroundColor: Theme.of(context).colorScheme.surface,
             scrolledUnderElevation: 0,
             elevation: 0,
-            bottom: TabBar(
-              tabs: [
-                Tab(text: tr("Statistics.Weekly")),
-                Tab(text: tr("Statistics.Monthly")),
-              ],
+            title: Container(
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: AppColor.themeGrey,
+                  width: 1.w,
+                ),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: SegmentedTabControl(
+                selectedTabTextColor: Colors.black,
+                tabPadding: EdgeInsets.zero,
+                height: 36.h,
+                tabs: _tabs,
+              ),
             ),
           ),
           drawer: DrewerWhiteNoiseController(),
@@ -90,6 +116,9 @@ class _StatisticsScreenState extends State<StatisticsScreen>
           onDrawerChanged: (isOpened) {
             setState(() {
               _isDrawerOpen = isOpened;
+              if (!isOpened) {
+                _updateAnimationState(_isAnyAudioPlaying);
+              }
             });
           },
           body: Stack(
@@ -100,39 +129,41 @@ class _StatisticsScreenState extends State<StatisticsScreen>
                   MonthlyStatisticsScreen(),
                 ],
               ),
-              Positioned(
-                left: 0,
-                top: 0,
-                bottom: 0,
-                child: GestureDetector(
-                  onHorizontalDragUpdate: (details) {
-                    if (details.primaryDelta! > 0) {
-                      Scaffold.of(context).openDrawer();
-                    }
-                  },
-                  child: Container(
-                    width: 60.w,
-                    color: Colors.transparent,
-                    child: AnimatedBuilder(
-                      animation: _animationController,
-                      builder: (context, child) {
-                        return Center(
-                          child: Transform.translate(
-                            offset: Offset(
-                                -10 + (10 * _animationController.value), 0),
-                            child: Icon(
-                              Icons.arrow_forward_ios,
-                              color: Colors.red.withOpacity(
-                                  0.6 * _animationController.value),
-                              size: 24.w,
+              if (_isAnyAudioPlaying &&
+                  !_isDrawerOpen) // 화이트 노이즈가 재생 중이고 Drawer가 닫혀있을 때만 표시
+                Positioned(
+                  left: 0,
+                  top: 0,
+                  bottom: 0,
+                  child: GestureDetector(
+                    onHorizontalDragUpdate: (details) {
+                      if (details.primaryDelta! > 0) {
+                        Scaffold.of(context).openDrawer();
+                      }
+                    },
+                    child: Container(
+                      width: 60.w,
+                      color: Colors.transparent,
+                      child: AnimatedBuilder(
+                        animation: _animationController,
+                        builder: (context, child) {
+                          return Center(
+                            child: Transform.translate(
+                              offset: Offset(
+                                  -10 + (10 * _animationController.value), 0),
+                              child: Icon(
+                                Icons.arrow_forward_ios,
+                                color: Colors.red.withOpacity(
+                                    0.6 * _animationController.value),
+                                size: 24.w,
+                              ),
                             ),
-                          ),
-                        );
-                      },
+                          );
+                        },
+                      ),
                     ),
                   ),
                 ),
-              ),
             ],
           ),
           bottomNavigationBar: BottomNavBar(),
