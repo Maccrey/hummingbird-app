@@ -21,6 +21,7 @@ class AppSettingViewModel extends _$AppSettingViewModel {
     String? updatedLanguage,
     bool? updatedAutoFocusMode,
     bool? updatedAutoBreathingExercise,
+    bool? updatedWhiteNoiseAnimation,
   }) async {
     final currentAppSetting = repository.getAppSetting();
     final updatedAppSetting = currentAppSetting.copyWith(
@@ -30,9 +31,15 @@ class AppSettingViewModel extends _$AppSettingViewModel {
       autoFocusMode: updatedAutoFocusMode ?? currentAppSetting.autoFocusMode,
       autoBreathingExercise: updatedAutoBreathingExercise ??
           currentAppSetting.autoBreathingExercise,
+      whiteNoiseAnimation:
+          updatedWhiteNoiseAnimation ?? currentAppSetting.whiteNoiseAnimation,
     );
     await repository.updateAppSetting(updatedAppSetting);
     state = updatedAppSetting;
+  }
+
+  Future<void> setWhiteNoiseAnimation(bool value) async {
+    await updateAppSetting(updatedWhiteNoiseAnimation: value);
   }
 
   bool get isFirstInstalled => repository.checkIsFirstInstalled();

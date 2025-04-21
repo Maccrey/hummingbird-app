@@ -159,7 +159,10 @@
     "Setting": "Configuraciones"
   },
   "SettingsScreen": {
-    "Settings": "Configuraciones"
+    "Settings": "Configuraciones",
+    "AnimationSettings": "Configuraciones de animación",
+    "whiteNoiseAnimation": "Animación de ruido blanco",
+    "whiteNoiseAnimationDesc": "Mostrar animación del cajón cuando se reproduzca ruido blanco"
   },
   "SetProfileWidget": {
     "next": "Siguiente",
@@ -229,7 +232,8 @@
   "TimerSetting": {
     "AutoFocusMode": "Modo enfoque automático",
     "AutoBreathingExercise": "Modo de respiración automática para la concentración",
-    "TimeerSetting": "Configuración del temporizador"
+    "TimerSetting": "Configuración del temporizador",
+    "TimerMode": "Modo de temporizador"
   },
   "TotalDuratinosLineChartWidget": {
     "totalStudyTime": "Tiempo total de estudio por día"

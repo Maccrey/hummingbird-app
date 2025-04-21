@@ -8,6 +8,7 @@ import '../../../core/router/bottom_nav_bar.dart';
 import '../../../core/services/whitenoise/audio_service.dart';
 import '../../../core/theme/colors/app_color.dart';
 import '../../models/whitenoise/audio_model.dart';
+import '../../viewmodels/app_setting/app_setting_view_model.dart';
 import '../white_noise/drawer_white_noise_controller.dart';
 import 'widgets/leard_board_widget.dart';
 
@@ -54,6 +55,8 @@ class _SocialScreenState extends ConsumerState<SocialScreen>
     final audioList = ref.watch(multiAudioViewModelProvider);
     final isAnyAudioPlaying =
         audioList.any((audio) => audio.playbackState == PlaybackState.playing);
+    final isAnimationEnabled =
+        ref.watch(appSettingViewModelProvider).whiteNoiseAnimation;
 
     // 상태가 변경되었을 때만 애니메이션 업데이트
     if (isAnyAudioPlaying != _isAnyAudioPlaying) {
@@ -76,10 +79,10 @@ class _SocialScreenState extends ConsumerState<SocialScreen>
           scrolledUnderElevation: 0,
           elevation: 0,
           title: Text(
-            tr('NavigationBar.Ranking'),
+            tr('Rank.Rank'),
             style: TextStyle(
               color: Colors.black,
-              fontSize: 16.sp,
+              fontSize: 20.sp,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -104,7 +107,7 @@ class _SocialScreenState extends ConsumerState<SocialScreen>
                 ],
               ),
             ),
-            if (_isAnyAudioPlaying && !_isDrawerOpen)
+            if (_isAnyAudioPlaying && !_isDrawerOpen && isAnimationEnabled)
               Positioned(
                 left: 0,
                 top: 0,

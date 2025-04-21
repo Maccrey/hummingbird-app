@@ -9,6 +9,7 @@ import '../../../../core/router/bottom_nav_bar.dart';
 import '../../../../core/theme/colors/app_color.dart';
 import '../../../../core/services/whitenoise/audio_service.dart';
 import '../../../models/whitenoise/audio_model.dart';
+import '../../../viewmodels/app_setting/app_setting_view_model.dart';
 import '../../white_noise/drawer_white_noise_controller.dart';
 import 'monthly_statistics_screen.dart';
 import 'weekly_statistics_screen.dart';
@@ -71,6 +72,8 @@ class _StatisticsScreenState extends ConsumerState<StatisticsScreen>
     final audioList = ref.watch(multiAudioViewModelProvider);
     final isAnyAudioPlaying =
         audioList.any((audio) => audio.playbackState == PlaybackState.playing);
+    final isAnimationEnabled =
+        ref.watch(appSettingViewModelProvider).whiteNoiseAnimation;
 
     // 상태가 변경되었을 때만 애니메이션 업데이트
     if (isAnyAudioPlaying != _isAnyAudioPlaying) {
@@ -129,8 +132,7 @@ class _StatisticsScreenState extends ConsumerState<StatisticsScreen>
                   MonthlyStatisticsScreen(),
                 ],
               ),
-              if (_isAnyAudioPlaying &&
-                  !_isDrawerOpen) // 화이트 노이즈가 재생 중이고 Drawer가 닫혀있을 때만 표시
+              if (_isAnyAudioPlaying && !_isDrawerOpen && isAnimationEnabled)
                 Positioned(
                   left: 0,
                   top: 0,

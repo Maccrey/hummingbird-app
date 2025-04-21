@@ -15,6 +15,7 @@ import 'home_seg1_screen.dart';
 import 'widgets/breathing_exercise_widget.dart'; // Import the new widget
 import 'home_seg2_screen.dart';
 import 'home_seg3_screen.dart';
+import '../../viewmodels/app_setting/app_setting_view_model.dart';
 
 final List<SegmentTab> _tabs = [
   SegmentTab(
@@ -80,6 +81,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
     final audioList = ref.watch(multiAudioViewModelProvider);
     final isAnyAudioPlaying =
         audioList.any((audio) => audio.playbackState == PlaybackState.playing);
+    final isAnimationEnabled =
+        ref.watch(appSettingViewModelProvider).whiteNoiseAnimation;
 
     // 상태가 변경되었을 때만 애니메이션 업데이트
     if (isAnyAudioPlaying != _isAnyAudioPlaying) {
@@ -139,7 +142,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                   ],
                 ),
               ),
-              if (_isAnyAudioPlaying && !_isDrawerOpen)
+              if (_isAnyAudioPlaying && !_isDrawerOpen && isAnimationEnabled)
                 Positioned(
                   left: 0,
                   top: 0,

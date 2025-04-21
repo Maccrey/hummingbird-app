@@ -159,7 +159,10 @@
     "Setting": "設定"
   },
   "SettingsScreen": {
-    "Settings": "設定"
+    "Settings": "設定",
+    "AnimationSettings": "アニメーション設定",
+    "whiteNoiseAnimation": "ホワイトノイズアニメーション",
+    "whiteNoiseAnimationDesc": "ホワイトノイズ再生時にドロワーアニメーションを表示"
   },
   "SetProfileWidget": {
     "next": "次へ",
@@ -229,7 +232,8 @@
   "TimerSetting": {
     "AutoFocusMode": "自動集中モード",
     "AutoBreathingExercise": "自動集中呼吸モード",
-    "TimeerSetting": "タイマー設定"
+    "TimerSetting": "タイマー設定",
+    "TimerMode": "タイマーモード"
   },
   "TotalDuratinosLineChartWidget": {
     "totalStudyTime": "1日の総学習時間"
