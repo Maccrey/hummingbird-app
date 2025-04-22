@@ -1,11 +1,14 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
+import 'package:haptic_feedback/haptic_feedback.dart';
 
 import '../../../../../core/enum/mxnRate.dart';
 import '../../../../../core/utils/get_formatted_time.dart';
+import '../../../../../core/utils/selection_haptic.dart';
 import '../../../../../core/widgets/admob_widget.dart';
 import '../../../../../core/widgets/mxnContainer.dart';
 import '../../../../providers/suduck_timer/suduck_timer_provider_2_0.dart';
@@ -190,8 +193,10 @@ class _SuDuckTimerWidgetState extends ConsumerState<SuDuckTimerWidget>
                         ),
                         if (isRunning || suduckTimer.elapsedTime > 0)
                           GestureDetector(
-                            onTap: () {
-                              suduckTimerNotifier.saveTimer;
+                            onTap: () async {
+                              // 먼저 저장 로직을 실행합니다.
+                              await suduckTimerNotifier.saveTimer();
+                              // 저장 후 전면 광고를 표시합니다.
                               AdMobWidget.showInterstitialAd();
                             },
                             child: Container(
