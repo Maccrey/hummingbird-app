@@ -312,7 +312,13 @@ class _SuduckTimerFocusModeWidgetState
     }
 
     return Scaffold(
-      bottomNavigationBar: AdMobWidget.showBannerAd(80.h),
+      bottomNavigationBar: SafeArea(
+        bottom: true,
+        child: SizedBox(
+          height: 80.h,
+          child: AdMobWidget.showBannerAd(80),
+        ),
+      ),
       body: Center(
         child: AnimatedBuilder(
           animation: _colorAnimation,
