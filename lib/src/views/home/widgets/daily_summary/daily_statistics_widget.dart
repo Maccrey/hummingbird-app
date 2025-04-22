@@ -28,6 +28,7 @@ class DailyStatisticsWidget extends ConsumerWidget {
             ref.watch(studySettingViewModelProvider).goalDuration;
         if (studyRecords.isEmpty) {
           return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               DailySummaryWidget(
                   totalStudyDuration: 0, goalDuration: goalDuration),
@@ -53,32 +54,27 @@ class DailyStatisticsWidget extends ConsumerWidget {
 
         final totalStudyDuration = studyDurationList.fold(0, (a, b) => a + b);
 
-        // Wrap with Expanded to give the SingleChildScrollView bounded height
-        return SizedBox(
-          height: MediaQuery.of(context).size.height * 0.8,
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                DailySummaryWidget(
-                  totalStudyDuration: totalStudyDuration,
-                  goalDuration: goalDuration,
-                ),
-                AdMobWidget.showBannerAd(50, true),
-                StudyPieChartWidget(
-                  subjectTitleList: sortedTitleList,
-                  studyDurationList: sortedDurationList,
-                  subjectColorList: sortedColorList,
-                  totalStudyDuration: totalStudyDuration,
-                ),
-                StudyBarChartWidget(
-                  subjectTitleList: subjectTitleList,
-                  studyDurationList: studyDurationList,
-                  subjectColorList: subjectColorList,
-                ),
-                AdMobWidget.showBannerAd(50, true),
-              ],
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            DailySummaryWidget(
+              totalStudyDuration: totalStudyDuration,
+              goalDuration: goalDuration,
             ),
-          ),
+            AdMobWidget.showBannerAd(50, true),
+            StudyPieChartWidget(
+              subjectTitleList: sortedTitleList,
+              studyDurationList: sortedDurationList,
+              subjectColorList: sortedColorList,
+              totalStudyDuration: totalStudyDuration,
+            ),
+            StudyBarChartWidget(
+              subjectTitleList: subjectTitleList,
+              studyDurationList: studyDurationList,
+              subjectColorList: subjectColorList,
+            ),
+            AdMobWidget.showBannerAd(50, true),
+          ],
         );
       },
       error: (error, stackTrace) => Center(

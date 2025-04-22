@@ -12,21 +12,23 @@ class Seg3Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          MxNcontainer(
-            MxN_rate: MxNRate.TWOBYTHREEQUARTERS,
-            MxN_child: Container(
-              color: Colors.white,
-              padding: const EdgeInsets.all(16.0),
-              child: const StudyGrassWidget(),
-            ),
+    return ListView(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      children: [
+        // 스터디 그래스 위젯
+        MxNcontainer(
+          MxN_rate: MxNRate.TWOBYTHREEQUARTERS,
+          MxN_child: Container(
+            color: Colors.white,
+            padding: const EdgeInsets.all(16.0),
+            child: const StudyGrassWidget(),
           ),
-          AdMobWidget.showBannerAd(50, true),
-          DailyStatisticsWidget(),
-        ],
-      ),
+        ),
+        // 중간 배너 광고
+        AdMobWidget.showBannerAd(50, true),
+        // 일일 통계 위젯
+        DailyStatisticsWidget(),
+      ],
     );
   }
 }
