@@ -13,6 +13,7 @@ import '../../../core/utils/selection_haptic.dart';
 import '../../providers/suduck_timer/suduck_timer_provider_2_0.dart';
 import '../../viewmodels/timer/timer_bg_color_provider.dart';
 import '../../../core/services/analytics_service.dart';
+import '../../../core/widgets/admob_widget.dart';
 
 class SuduckTimerFocusModeWidget extends ConsumerStatefulWidget {
   const SuduckTimerFocusModeWidget({super.key});
@@ -311,6 +312,13 @@ class _SuduckTimerFocusModeWidgetState
     }
 
     return Scaffold(
+      bottomNavigationBar: SafeArea(
+        bottom: true,
+        child: SizedBox(
+          height: 80.h,
+          child: AdMobWidget.showBannerAd(80),
+        ),
+      ),
       body: Center(
         child: AnimatedBuilder(
           animation: _colorAnimation,
