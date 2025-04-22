@@ -7,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import '../../../core/utils/get_formatted_time.dart';
 import '../../../core/utils/selection_haptic.dart';
@@ -55,6 +56,10 @@ class _SuduckTimerFocusModeWidgetState
   final Duration _movementResetDuration =
       Duration(milliseconds: 800); // 움직임 초기화 시간
   bool _isProcessingMovement = false;
+
+  // Focus mode 전용 배너 광고 인스턴스
+  late final BannerAd _focusBannerAd;
+  int _bannerLoadCount = 0; // 배너 로드 카운트
 
   void _resetAllStates() {
     if (mounted) {
@@ -150,6 +155,29 @@ class _SuduckTimerFocusModeWidgetState
 
     // 타이머 시작 이벤트
     AnalyticsService().logTimerStart('focus_mode');
+
+    // Focus mode 배너 광고 로드 및 애널리틱스 기록
+    _focusBannerAd = BannerAd(
+      adUnitId: AdMobWidget.bannerAdUnitId(),
+      size: AdSize.banner,
+      request: const AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (ad) {
+          _bannerLoadCount++; // 로드된 배너 횟수 증가
+          // Analytics: 배너 광고 로드 이벤트 및 로드 카운트 전달
+          AnalyticsService().analytics.logEvent(
+            name: 'focus_mode_banner_loaded',
+            parameters: {
+              'load_count': _bannerLoadCount,
+              'ad_unit_id': AdMobWidget.bannerAdUnitId(),
+            },
+          );
+        },
+        onAdFailedToLoad: (ad, error) {
+          ad.dispose();
+        },
+      ),
+    )..load();
   }
 
   @override
@@ -184,6 +212,8 @@ class _SuduckTimerFocusModeWidgetState
 
   @override
   void dispose() {
+    // 배너 광고 리소스 해제
+    _focusBannerAd.dispose();
     _resetTimer?.cancel();
     _resetTimer = null;
     _stopHapticFeedback();
@@ -312,11 +342,12 @@ class _SuduckTimerFocusModeWidgetState
     }
 
     return Scaffold(
+      // Focus mode 전용 배너 광고
       bottomNavigationBar: SafeArea(
         bottom: true,
         child: SizedBox(
-          height: 80.h,
-          child: AdMobWidget.showBannerAd(80),
+          height: AdSize.banner.height.toDouble(),
+          child: AdWidget(ad: _focusBannerAd),
         ),
       ),
       body: Center(

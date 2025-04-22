@@ -5,10 +5,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import '../../src/models/env.dart';
+import '../services/analytics_service.dart';
 
 class AdMobWidget {
-  // 배너 광고 ID
-  static String? bannerAdUnitId() {
+  // 배너 광고 ID (Android/iOS 전용, non-nullable)
+  static String bannerAdUnitId() {
     if (Platform.isAndroid) {
       return "ca-app-pub-8655023098401674/7820188800";
       // return Env.androidBannerAdId; // 실제 앱에서는 실제 ID로 교체
@@ -16,7 +17,7 @@ class AdMobWidget {
       return "ca-app-pub-8655023098401674/5194025465"; // 테스트 ID
       // return Env.iosBannerAdId; // 실제 앱에서는 실제 ID로 교체
     }
-    return null;
+    throw UnsupportedError('bannerAdUnitId는 Android 및 iOS 플랫폼에서만 지원됩니다.');
   }
 
   // 전면 광고 ID
@@ -55,6 +56,11 @@ class AdMobWidget {
       listener: BannerAdListener(
         onAdLoaded: (ad) {
           debugPrint('배너 광고가 성공적으로 로드되었습니다.');
+          // Analytics: 배너 광고 로드 이벤트 기록
+          AnalyticsService().analytics.logEvent(
+            name: 'banner_loaded',
+            parameters: {'ad_unit_id': adUnitId},
+          );
         },
         onAdFailedToLoad: (ad, error) {
           debugPrint('배너 광고 로드 실패: ${error.message}');

@@ -15,6 +15,7 @@ import '../../../../providers/suduck_timer/suduck_timer_provider_2_0.dart';
 import '../../../../viewmodels/app_setting/app_setting_view_model.dart';
 import '../../../../viewmodels/timer/timer_bg_color_provider.dart';
 import '../breathing_exercise_widget.dart';
+import '../../../../../core/services/analytics_service.dart';
 
 class SuDuckTimerWidget extends ConsumerStatefulWidget {
   const SuDuckTimerWidget({super.key});
@@ -194,6 +195,13 @@ class _SuDuckTimerWidgetState extends ConsumerState<SuDuckTimerWidget>
                         if (isRunning || suduckTimer.elapsedTime > 0)
                           GestureDetector(
                             onTap: () async {
+                              // Analytics: 타이머 저장 이벤트 로깅
+                              final duration =
+                                  Duration(seconds: suduckTimer.elapsedTime);
+                              final type = suduckTimer.currSubject?.title ??
+                                  tr("Timer.SelfStudy");
+                              await AnalyticsService()
+                                  .logTimerSave(type, duration);
                               // 먼저 저장 로직을 실행합니다.
                               await suduckTimerNotifier.saveTimer();
                               // 저장 후 전면 광고를 표시합니다.
