@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:flutter_volume_controller/flutter_volume_controller.dart';
 
 import '../../src/models/env.dart';
 import '../services/analytics_service.dart';
@@ -282,11 +283,14 @@ class AdMobWidget {
 
   // 전면 광고 로드 및 표시 (로드 실패 시 콜백만 호출)
   static Future<void> showInterstitialAd({Function? onAdClosed}) async {
+    // 광고를 띄우기 전 현재 볼륨 저장 및 음소거
     final adUnitId = interstitialAdUnitId();
     if (adUnitId == null) {
       onAdClosed?.call();
       return;
     }
+    final double? originalVolume = await FlutterVolumeController.getVolume();
+    await FlutterVolumeController.setVolume(0);
 
     InterstitialAd? interstitialAd;
     await InterstitialAd.load(
@@ -298,30 +302,31 @@ class AdMobWidget {
           interstitialAd = ad;
 
           // 광고가 로드되면 표시
-          if (interstitialAd != null) {
-            interstitialAd!.fullScreenContentCallback =
-                FullScreenContentCallback(
-              onAdDismissedFullScreenContent: (ad) {
-                debugPrint('전면 광고가 닫혔습니다.');
-                ad.dispose();
-                onAdClosed?.call();
-              },
-              onAdFailedToShowFullScreenContent: (ad, error) {
-                debugPrint('전면 광고 표시 실패: ${error.message}');
-                ad.dispose();
-                onAdClosed?.call();
-              },
-            );
-            interstitialAd!.show();
-          } else {
-            onAdClosed?.call();
-          }
+          interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
+            onAdDismissedFullScreenContent: (ad) async {
+              debugPrint('전면 광고가 닫혔습니다.');
+              ad.dispose();
+              // 광고 종료 후 볼륨 복원
+              await FlutterVolumeController.setVolume(originalVolume ?? 0.0);
+              onAdClosed?.call();
+            },
+            onAdFailedToShowFullScreenContent: (ad, error) async {
+              debugPrint('전면 광고 표시 실패: ${error.message}');
+              ad.dispose();
+              // 실패 시에도 볼륨 복원
+              await FlutterVolumeController.setVolume(originalVolume ?? 0.0);
+              onAdClosed?.call();
+            },
+          );
+          interstitialAd!.show();
         },
-        onAdFailedToLoad: (error) {
+        onAdFailedToLoad: (error) async {
           debugPrint('전면 광고 로드 실패: ${error.message}');
           debugPrint('에러 코드: ${error.code}');
           debugPrint('에러 도메인: ${error.domain}');
-          onAdClosed?.call(); // 로드 실패 시에도 콜백 호출
+          // 로드 실패 시 볼륨 복원
+          await FlutterVolumeController.setVolume(originalVolume ?? 0.0);
+          onAdClosed?.call();
         },
       ),
     );
