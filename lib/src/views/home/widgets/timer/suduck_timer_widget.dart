@@ -190,7 +190,10 @@ class _SuDuckTimerWidgetState extends ConsumerState<SuDuckTimerWidget>
                         ),
                         if (isRunning || suduckTimer.elapsedTime > 0)
                           GestureDetector(
-                            onTap: suduckTimerNotifier.saveTimer,
+                            onTap: () {
+                              suduckTimerNotifier.saveTimer;
+                              AdMobWidget.showInterstitialAd();
+                            },
                             child: Container(
                               width: 48.w,
                               height: 44.h,
