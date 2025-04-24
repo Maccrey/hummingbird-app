@@ -92,7 +92,9 @@
     "nickNameHint": "更改个人资料",
     "save": "保存",
     "mbtiTest": "MBTI测试",
-    "NoMBTIResult": "没有MBTI结果"
+    "NoMBTIResult": "没有MBTI结果",
+    "country": "国家",
+    "selectCountry": "选择国家"
   },
   "ProfileSettingScreen": {
     "loadingText": "今天也要全力以赴，与 Study Duck 一起学习..."

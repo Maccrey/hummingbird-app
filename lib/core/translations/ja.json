@@ -92,7 +92,9 @@
     "nickNameHint": "プロフィール変更",
     "save": "保存",
     "mbtiTest": "MBTIテスト",
-    "NoMBTIResult": "MBTIの結果なし"
+    "NoMBTIResult": "MBTIの結果なし",
+    "country": "国",
+    "selectCountry": "国を選択"
   },
   "ProfileSettingScreen": {
     "loadingText": "今日も全力で Study Duck と一緒に..."

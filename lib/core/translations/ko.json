@@ -92,7 +92,9 @@
     "nickNameHint": "프로필 변경",
     "save": "저장",
     "mbtiTest": "MBTI 테스트",
-    "NoMBTIResult": "MBTI결과 없음"
+    "NoMBTIResult": "MBTI결과 없음",
+    "country": "국가",
+    "selectCountry": "국가 선택"
   },
   "ProfileSettingScreen": {
     "loadingText": "오늘도 최선을 다해서 Study Duck과 함께..."

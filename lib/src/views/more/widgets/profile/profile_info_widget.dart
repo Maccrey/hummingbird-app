@@ -7,6 +7,7 @@ import '../../../../../core/utils/format_date.dart';
 import '../../../../../core/widgets/mxnContainer.dart';
 import '../../../../viewmodels/user_setting/user_setting_view_model.dart';
 import '../../../mbti/mbti_screen.dart';
+import 'select_country_widget.dart';
 
 class ProfileInfoWidget extends ConsumerWidget {
   const ProfileInfoWidget({
@@ -14,10 +15,12 @@ class ProfileInfoWidget extends ConsumerWidget {
     required this.nickNameController,
     required this.birthDateController,
     required this.mbtiController,
+    required this.countryController,
     required this.nickNameFocusNode,
     required this.mbtiFocusNode,
     required this.selectDate,
     required this.validateNickName,
+    required this.onCountrySelected,
     required this.mbti,
     this.onMbtiUpdate,
   });
@@ -25,10 +28,12 @@ class ProfileInfoWidget extends ConsumerWidget {
   final TextEditingController nickNameController;
   final TextEditingController birthDateController;
   final TextEditingController mbtiController;
+  final TextEditingController countryController;
   final FocusNode nickNameFocusNode;
   final FocusNode mbtiFocusNode;
   final void Function(DateTime selectedDate) selectDate;
   final void Function() validateNickName;
+  final void Function(String countryCode) onCountrySelected;
   final void Function(String)? onMbtiUpdate;
   final String mbti;
 
@@ -154,6 +159,10 @@ class ProfileInfoWidget extends ConsumerWidget {
                   ),
                 ),
               ],
+            ),
+            SelectCountryWidget(
+              countryController: countryController,
+              onCountrySelected: onCountrySelected,
             ),
           ],
         ),

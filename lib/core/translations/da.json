@@ -92,7 +92,9 @@
     "nickNameHint": "Rediger profil",
     "save": "GEM",
     "mbtiTest": "MBTI-test",
-    "NoMBTIResult": "Intet MBTI-resultat"
+    "NoMBTIResult": "Intet MBTI-resultat",
+    "country": "Land",
+    "selectCountry": "Vælg land"
   },
   "ProfileSettingScreen": {
     "loadingText": "Giv dit bedste i dag med Study Duck..."

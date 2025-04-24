@@ -92,7 +92,9 @@
     "nickNameHint": "प्रोफाइल संपादित करें",
     "save": "सहेजें",
     "mbtiTest": "MBTI परीक्षण",
-    "NoMBTIResult": "कोई MBTI परिणाम नहीं"
+    "NoMBTIResult": "कोई MBTI परिणाम नहीं",
+    "country": "देश",
+    "selectCountry": "देश चुनें"
   },
   "ProfileSettingScreen": {
     "loadingText": "आज स्टडी डक के साथ अपना सर्वश्रेष्ठ प्रयास कर रहे हैं..."

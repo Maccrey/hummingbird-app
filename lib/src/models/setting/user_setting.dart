@@ -10,6 +10,7 @@ class UserSetting with _$UserSetting {
     String? birthDate,
     String? mbti,
     String? profileImgUrl,
+    String? country,
   }) = _UserSetting;
 
   factory UserSetting.fromJson(Map<String, dynamic> json) =>
