@@ -14,6 +14,7 @@ class AppSettingLocalDatasource {
       final appSetting = _box.get(_key);
       return appSetting ?? AppSetting();
     } catch (e) {
+      _box.delete(_key);
       return AppSetting();
     }
   }
