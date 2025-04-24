@@ -25,10 +25,10 @@ class SetProfileWidget extends StatefulWidget {
 }
 
 class _ProfileContainerWidgetState extends State<SetProfileWidget> {
-  late final TextEditingController _nickNameController;
-  late final TextEditingController _birthDateController;
-  late final TextEditingController _mbtiController;
-  late final TextEditingController _countryController;
+  late TextEditingController _nickNameController;
+  late TextEditingController _birthDateController;
+  late TextEditingController _mbtiController;
+  late TextEditingController _countryController;
   late final UserSettingViewModel userSettingViewModel;
 
   final _focusNode = FocusNode();
@@ -44,7 +44,6 @@ class _ProfileContainerWidgetState extends State<SetProfileWidget> {
     _nickNameController = TextEditingController(text: widget.nickName);
     _birthDateController = TextEditingController(text: widget.birthDate);
     _mbtiController = TextEditingController(text: widget.mbti ?? '');
-    _mbtiController = TextEditingController(text: '');
     _countryController = TextEditingController();
     selectedCountryCode = null;
 
