@@ -101,14 +101,15 @@ class _MBTIScreenState extends State<MBTIScreen> {
     }
   }
 
-  void _showResult() {
+  void _showResult() async {
     String mbtiResult = '';
     mbtiResult += scores['E']! > scores['I']! ? 'E' : 'I';
     mbtiResult += scores['S']! > scores['N']! ? 'S' : 'N';
     mbtiResult += scores['T']! > scores['F']! ? 'T' : 'F';
     mbtiResult += scores['J']! > scores['P']! ? 'J' : 'P';
 
-    Navigator.push(
+    // ResultScreen으로 이동하고 결과를 기다림
+    final result = await Navigator.push<String>(
       context,
       MaterialPageRoute(
         builder: (context) => ResultScreen(
@@ -118,6 +119,16 @@ class _MBTIScreenState extends State<MBTIScreen> {
         ),
       ),
     );
+
+    // 결과 값이 반환되면 처리
+    if (result != null && result.isNotEmpty && widget.onMbtiResult != null) {
+      print("MBTI 결과를 MBTIScreen에서 받음: $result");
+      // 결과를 상위 화면으로 전달하고 현재 화면 닫기
+      widget.onMbtiResult!(result);
+      if (mounted) {
+        Navigator.pop(context, result);
+      }
+    }
   }
 
   @override
