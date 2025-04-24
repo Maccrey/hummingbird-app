@@ -342,6 +342,16 @@ class _SuduckTimerFocusModeWidgetState
     }
 
     return Scaffold(
+      // Focus mode 전용 배너 광고
+      bottomNavigationBar: SafeArea(
+        bottom: true,
+        child: Container(
+          // 백그라운드 컬러 애니메이션 값 적용
+          color: _colorAnimation.value,
+          height: AdSize.banner.height.toDouble(),
+          child: AdWidget(ad: _focusBannerAd),
+        ),
+      ),
       body: Center(
         child: AnimatedBuilder(
           animation: _colorAnimation,
