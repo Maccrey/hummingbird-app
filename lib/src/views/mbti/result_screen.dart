@@ -304,14 +304,17 @@ class _ResultScreenState extends State<ResultScreen> {
 
   void _MoveToThePageAfterTheMBTItest() async {
     print("MBTI 결과 화면에서 온 경우");
+    String mbtiResult = widget.mbtiType;
+
+    // 1. MBTI 결과 처리 (콜백 호출)
     if (widget.onMbtiResult != null) {
-      await widget.onMbtiResult!(widget.mbtiType);
+      await widget.onMbtiResult!(mbtiResult);
     }
     if (!mounted) return;
-    int count = 0;
-    Navigator.of(context).popUntil((route) {
-      return count++ == 2;
-    });
+
+    // 2. 현재 화면을 닫고 결과 값 반환
+    print("MBTI 결과 반환: $mbtiResult");
+    Navigator.of(context).pop(mbtiResult);
   }
 
   Widget _buildMbtiHeader(String type) {
