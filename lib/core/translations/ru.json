@@ -92,7 +92,9 @@
     "nickNameHint": "Редактировать профиль",
     "save": "СОХРАНИТЬ",
     "mbtiTest": "Тест MBTI",
-    "NoMBTIResult": "Нет результата MBTI"
+    "NoMBTIResult": "Нет результата MBTI",
+    "country": "Страна",
+    "selectCountry": "Выберите страну"
   },
   "ProfileSettingScreen": {
     "loadingText": "Делаете все возможное сегодня с Study Duck..."

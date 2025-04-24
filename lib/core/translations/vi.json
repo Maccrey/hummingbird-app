@@ -92,7 +92,9 @@
     "nickNameHint": "Chỉnh sửa hồ sơ",
     "save": "Lưu",
     "mbtiTest": "Bài kiểm tra MBTI",
-    "NoMBTIResult": "Không có kết quả MBTI"
+    "NoMBTIResult": "Không có kết quả MBTI",
+    "country": "Quốc gia",
+    "selectCountry": "Chọn quốc gia"
   },
   "ProfileSettingScreen": {
     "loadingText": "Hãy cố gắng hết mình cùng với Study Duck..."
