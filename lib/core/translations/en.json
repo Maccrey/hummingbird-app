@@ -92,7 +92,9 @@
     "nickNameHint": "Edit Profile",
     "save": "SAVE",
     "mbtiTest": "MBTI Test",
-    "NoMBTIResult": "No MBTI result"
+    "NoMBTIResult": "No MBTI result",
+    "country": "Country",
+    "selectCountry": "Select Country"
   },
   "ProfileSettingScreen": {
     "loadingText": "Doing your best today with Study Duck..."

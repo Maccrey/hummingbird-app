@@ -28,11 +28,13 @@ class _ProfileContainerWidgetState extends State<SetProfileWidget> {
   late final TextEditingController _nickNameController;
   late final TextEditingController _birthDateController;
   late final TextEditingController _mbtiController;
+  late final TextEditingController _countryController;
   late final UserSettingViewModel userSettingViewModel;
 
   final _focusNode = FocusNode();
   final _nickNameFocusNode = FocusNode();
   final _mbtiFocusNode = FocusNode();
+  String? selectedCountryCode;
   DateTime? birthDate;
 
   @override
@@ -42,8 +44,16 @@ class _ProfileContainerWidgetState extends State<SetProfileWidget> {
     _nickNameController = TextEditingController(text: widget.nickName);
     _birthDateController = TextEditingController(text: widget.birthDate);
     _mbtiController = TextEditingController(text: '');
+    _countryController = TextEditingController();
+    selectedCountryCode = null;
 
     userSettingViewModel = widget.userSettingViewModel;
+  }
+
+  void onCountrySelected(String countryCode) {
+    setState(() {
+      selectedCountryCode = countryCode;
+    });
   }
 
   void validateNickName() {
@@ -62,6 +72,7 @@ class _ProfileContainerWidgetState extends State<SetProfileWidget> {
     _nickNameController.dispose();
     _birthDateController.dispose();
     _mbtiController.dispose();
+    _countryController.dispose();
     _focusNode.dispose();
     super.dispose();
   }
@@ -77,6 +88,8 @@ class _ProfileContainerWidgetState extends State<SetProfileWidget> {
             nickNameController: _nickNameController,
             birthDateController: _birthDateController,
             mbtiController: _mbtiController,
+            countryController: _countryController,
+            onCountrySelected: onCountrySelected,
             mbti: widget.mbti ?? '',
             nickNameFocusNode: _nickNameFocusNode,
             mbtiFocusNode: _mbtiFocusNode,
@@ -107,6 +120,7 @@ class _ProfileContainerWidgetState extends State<SetProfileWidget> {
                   await userSettingViewModel.updateUserSetting(
                     updatedNickName: _nickNameController.text,
                     updatedAge: _birthDateController.text,
+                    updatedCountry: selectedCountryCode,
                   );
                   if (context.mounted) {
                     context.go('/tutorial/studySetting');

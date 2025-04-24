@@ -41,6 +41,8 @@ class ProfileScreen extends ConsumerWidget {
                     EditProfileWidget(
                       nickName: userSetting.nickname,
                       birthDate: userSetting.birthDate,
+                      mbti: userSetting.mbti,
+                      country: userSetting.country,
                       userSettingViewModel: userSettingViewModel,
                     ),
                   ],
