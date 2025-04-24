@@ -161,7 +161,10 @@
     "Setting": "Indstillinger"
   },
   "SettingsScreen": {
-    "Settings": "Indstillinger"
+    "Settings": "Indstillinger",
+    "AnimationSettings": "Animationsindstillinger",
+    "whiteNoiseAnimation": "Hvid støj-animation",
+    "whiteNoiseAnimationDesc": "Vis skuffens animation når hvid støj afspilles"
   },
   "SetProfileWidget": {
     "next": "Næste",
@@ -231,7 +234,8 @@
   "TimerSetting": {
     "AutoFocusMode": "Automatisk fokus-tilstand",
     "AutoBreathingExercise": "Automatisk Fokusåndedrætstilstand",
-    "TimeerSetting": "Timerindstillinger"
+    "TimerSetting": "Timerindstilling",
+    "TimerMode": "Timertilstand"
   },
   "TotalDuratinosLineChartWidget": {
     "totalStudyTime": "Total studietid pr. dag"

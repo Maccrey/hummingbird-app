@@ -71,7 +71,7 @@ class DrewerWhiteNoiseController extends ConsumerWidget {
                         child: InkWell(
                           onTap: () {
                             Navigator.pop(context);
-                            context.go('/whiteNoise');
+                            context.push('/whiteNoise');
                           },
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,

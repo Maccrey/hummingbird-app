@@ -161,7 +161,10 @@
     "Setting": "Настройки"
   },
   "SettingsScreen": {
-    "Settings": "Настройки"
+    "Settings": "Настройки",
+    "AnimationSettings": "Настройки анимации",
+    "whiteNoiseAnimation": "Анимация белого шума",
+    "whiteNoiseAnimationDesc": "Показ анимации выдвижного меню при воспроизведении белого шума"
   },
   "SetProfileWidget": {
     "next": "Далее",
@@ -231,7 +234,8 @@
   "TimerSetting": {
     "AutoFocusMode": "Автоматический режим фокусировки",
     "AutoBreathingExercise": "Автоматический режим дыхания для концентрации",
-    "TimeerSetting": "Настройки таймера"
+    "TimerSetting": "Настройки таймера",
+    "TimerMode": "Режим таймера"
   },
   "TotalDuratinosLineChartWidget": {
     "totalStudyTime": "Общее время учебы в день"

@@ -34,7 +34,7 @@ class StudyPieChart extends StatelessWidget {
         ),
         const Spacer(flex: 1),
         Flexible(
-          flex: 3,
+          flex: 4,
           child: SingleChildScrollView(
             child: Column(
               children: getLegend(subjectTitleList, studyDurationList,
@@ -49,13 +49,15 @@ class StudyPieChart extends StatelessWidget {
   List<PieChartSectionData> getSections(List<String> subjectTitleList,
       List<int> studyDurationList, List<Color> subjectColorList, int total) {
     return List.generate(studyDurationList.length, (index) {
+      final percentage = total > 0
+          ? (studyDurationList[index] * 100 / total).toStringAsFixed(1)
+          : '0.0';
+
       return PieChartSectionData(
         color: subjectColorList[index],
         titlePositionPercentageOffset: 0.5,
         value: studyDurationList[index].toDouble(),
-        title: index == 0
-            ? '${(studyDurationList[index] * 100 / total).toStringAsFixed(1)}%'
-            : '',
+        title: index == 0 ? '$percentage%' : '',
         titleStyle: TextStyle(fontSize: 12),
       );
     });
@@ -65,32 +67,44 @@ class StudyPieChart extends StatelessWidget {
       List<int> studyDurationList, List<Color> subjectColorList, int total) {
     final percentageList = calculatePercentage(studyDurationList, total);
     return List.generate(subjectTitleList.length, (index) {
-      return Row(
-        children: [
-          Container(
-            width: 12.w,
-            height: 12.w,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(4),
-                color: subjectColorList[index]),
-          ),
-          Gap(10.w),
-          SizedBox(
-            width: 64.w,
-            child: Text(
-              subjectTitleList[index],
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
+      return Padding(
+        padding: EdgeInsets.symmetric(vertical: 4.h),
+        child: Row(
+          children: [
+            Container(
+              width: 12.w,
+              height: 12.w,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(4),
+                  color: subjectColorList[index]),
             ),
-          ),
-          const Spacer(),
-          Text(percentageList[index])
-        ],
+            Gap(10.w),
+            Expanded(
+              flex: 5,
+              child: Text(
+                subjectTitleList[index],
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+            Expanded(
+              flex: 4,
+              child: Text(
+                percentageList[index],
+                textAlign: TextAlign.right,
+              ),
+            ),
+          ],
+        ),
       );
     });
   }
 
   List<String> calculatePercentage(List<int> studyDurationList, int total) {
+    if (total <= 0) {
+      return List.generate(studyDurationList.length, (_) => '0.0%');
+    }
+
     double sum = 0.0;
     final List<String> percentageList = <String>[];
 
@@ -99,6 +113,10 @@ class StudyPieChart extends StatelessWidget {
       double tmp = (studyDurationList[i] * 1000 / total).roundToDouble() / 10;
       percentageList.add('${tmp.toStringAsFixed(1)}%');
       sum += tmp;
+    }
+
+    if (studyDurationList.isEmpty) {
+      return percentageList;
     }
 
     if (sum >= 100) {

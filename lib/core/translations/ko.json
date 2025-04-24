@@ -161,7 +161,10 @@
     "Setting": "설정"
   },
   "SettingsScreen": {
-    "Settings": "설정"
+    "Settings": "설정",
+    "AnimationSettings": "애니메이션 설정",
+    "whiteNoiseAnimation": "화이트 노이즈 애니메이션",
+    "whiteNoiseAnimationDesc": "화이트 노이즈 재생 시 드로어 애니메이션 표시 여부"
   },
   "SetProfileWidget": {
     "next": "다음",
@@ -231,7 +234,8 @@
   "TimerSetting": {
     "AutoFocusMode": "자동 집중모드",
     "AutoBreathingExercise": "자동 집중 호흡 모드",
-    "TimeerSetting": "타이머 셋팅"
+    "TimerSetting": "타이머 설정",
+    "TimerMode": "타이머 모드"
   },
   "TotalDuratinosLineChartWidget": {
     "totalStudyTime": "하루 총 공부시간"

@@ -161,7 +161,10 @@
     "Setting": "ตั้งค่า"
   },
   "SettingsScreen": {
-    "Settings": "ตั้งค่า"
+    "Settings": "ตั้งค่า",
+    "AnimationSettings": "การตั้งค่าแอนิเมชัน",
+    "whiteNoiseAnimation": "แอนิเมชันเสียงรบกวนสีขาว",
+    "whiteNoiseAnimationDesc": "แสดงการเคลื่อนไหวของลิ้นชักเมื่อเสียงรบกวนสีขาวกำลังเล่น"
   },
   "SetProfileWidget": {
     "next": "ถัดไป",
@@ -230,8 +233,9 @@
   },
   "TimerSetting": {
     "AutoFocusMode": "โหมดโฟกัสอัตโนมัติ",
-    "AutoBreathingExercise": "โหมดหายใจแบบโฟกัสอัตโนมัติ",
-    "TimeerSetting": "ตั้งค่าตัวจับเวลา"
+    "AutoBreathingExercise": "โหมดหายใจเพื่อการโฟกัสอัตโนมัติ",
+    "TimerSetting": "ตั้งค่าไทเมอร์",
+    "TimerMode": "โหมดไทเมอร์"
   },
   "TotalDuratinosLineChartWidget": {
     "totalStudyTime": "เวลาศึกษาทั้งหมดต่อวัน"

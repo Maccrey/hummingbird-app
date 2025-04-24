@@ -161,7 +161,10 @@
     "Setting": "Einstellungen"
   },
   "SettingsScreen": {
-    "Settings": "Einstellungen"
+    "Settings": "Einstellungen",
+    "AnimationSettings": "Animationseinstellungen",
+    "whiteNoiseAnimation": "Weißes Rauschen Animation",
+    "whiteNoiseAnimationDesc": "Zeige Drawer-Animation, wenn weißes Rauschen abgespielt wird"
   },
   "SetProfileWidget": {
     "next": "Weiter",
@@ -231,7 +234,8 @@
   "TimerSetting": {
     "AutoFocusMode": "Automatischer Fokusmodus",
     "AutoBreathingExercise": "Automatische Atemübung",
-    "TimeerSetting": "Timer-Einstellungen"
+    "TimerSetting": "Timer-Einstellungen",
+    "TimerMode": "Timer-Modus"
   },
   "TotalDuratinosLineChartWidget": {
     "totalStudyTime": "Gesamte Lernzeit pro Tag"

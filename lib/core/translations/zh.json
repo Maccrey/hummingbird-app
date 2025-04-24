@@ -161,7 +161,10 @@
     "Setting": "设置"
   },
   "SettingsScreen": {
-    "Settings": "设置"
+    "Settings": "设置",
+    "AnimationSettings": "动画设置",
+    "whiteNoiseAnimation": "白噪音动画",
+    "whiteNoiseAnimationDesc": "播放白噪音时显示抽屉动画"
   },
   "SetProfileWidget": {
     "next": "下一步",
@@ -231,7 +234,8 @@
   "TimerSetting": {
     "AutoFocusMode": "自动专注模式",
     "AutoBreathingExercise": "自动专注呼吸模式",
-    "TimeerSetting": "计时器设置"
+    "TimerSetting": "计时器设置",
+    "TimerMode": "计时器模式"
   },
   "TotalDuratinosLineChartWidget": {
     "totalStudyTime": "每日总学习时间"

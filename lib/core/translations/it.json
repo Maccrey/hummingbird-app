@@ -161,7 +161,10 @@
     "Setting": "Impostazioni"
   },
   "SettingsScreen": {
-    "Settings": "Impostazioni"
+    "Settings": "Impostazioni",
+    "AnimationSettings": "Impostazioni di animazione",
+    "whiteNoiseAnimation": "Animazione di rumore bianco",
+    "whiteNoiseAnimationDesc": "Mostra l'animazione del cassetto quando il rumore bianco è in riproduzione"
   },
   "SetProfileWidget": {
     "next": "Avanti",
@@ -229,9 +232,10 @@
     "WhiteNoise": "Rumore bianco"
   },
   "TimerSetting": {
-    "AutoFocusMode": "Modalità focus automatica",
-    "AutoBreathingExercise": "Modalità respirazione automatica per la concentrazione",
-    "TimeerSetting": "Impostazioni timer"
+    "AutoFocusMode": "Modalità di messa a fuoco automatica",
+    "AutoBreathingExercise": "Modalità esercizio di respirazione automatica",
+    "TimerSetting": "Impostazioni del timer",
+    "TimerMode": "Modalità timer"
   },
   "TotalDuratinosLineChartWidget": {
     "totalStudyTime": "Tempo totale di studio al giorno"
