@@ -53,6 +53,12 @@ th.json 태국어
 vi.json 베트남어
 zh.json 중국어
 
+id.json 인도네시아어
+tr.json.터키어
+ms.json.말레이어
+uk.json.우크라이나어
+sv.json.스웨덴어
+
 ## Analytics 로그
 
 ### 현재 로깅되는 이벤트
