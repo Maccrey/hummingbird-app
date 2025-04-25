@@ -11,7 +11,13 @@ class UserSettingLocalDatasource {
   String get key => 'userSetting';
 
   Future<void> addUserSetting(UserSetting userSetting) async {
-    await _box.put(key, userSetting);
+    try {
+      await _box.put(key, userSetting);
+    } catch (e) {
+      // 쓰기 실패 시 박스 초기화 후 재시도
+      await _box.delete(key);
+      await _box.put(key, userSetting);
+    }
   }
 
   UserSetting getUserSetting() {
@@ -32,6 +38,12 @@ class UserSettingLocalDatasource {
   }
 
   Future<void> updateUserSetting(UserSetting updatedUserSetting) async {
-    await _box.put(key, updatedUserSetting);
+    try {
+      await _box.put(key, updatedUserSetting);
+    } catch (e) {
+      // 쓰기 실패 시 박스 초기화 후 재시도
+      await _box.delete(key);
+      await _box.put(key, updatedUserSetting);
+    }
   }
 }

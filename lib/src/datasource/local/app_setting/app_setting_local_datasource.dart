@@ -20,14 +20,27 @@ class AppSettingLocalDatasource {
   }
 
   Future<void> updateAppSetting(AppSetting updatedAppSetting) async {
-    await _box.put(_key, updatedAppSetting);
+    try {
+      await _box.put(_key, updatedAppSetting);
+    } catch (e) {
+      // 쓰기 실패 시 박스 초기화 후 재시도
+      await _box.delete(_key);
+      await _box.put(_key, updatedAppSetting);
+    }
   }
 
   bool checkIsFirstInstalled() {
-    final isFirstInstalled = getAppSetting().isFirstInstalled;
-    if (isFirstInstalled) {
+    try {
+      final isFirstInstalled = getAppSetting().isFirstInstalled;
+      if (isFirstInstalled) {
+        updateAppSetting(AppSetting(isFirstInstalled: false));
+      }
+      return isFirstInstalled;
+    } catch (e) {
+      // 읽기/쓰기 실패 시 초기화하고 첫 실행으로 처리
+      _box.delete(_key);
       updateAppSetting(AppSetting(isFirstInstalled: false));
+      return true;
     }
-    return isFirstInstalled;
   }
 }
