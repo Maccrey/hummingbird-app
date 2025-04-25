@@ -111,22 +111,30 @@ class ProfileInfoWidget extends ConsumerWidget {
               children: [
                 TextField(
                   onTap: () async {
-                    await Navigator.push<String>(
+                    final mbtiResult = await Navigator.push<String>(
                       context,
                       MaterialPageRoute(
                         builder: (context) => MBTIScreen(
                           onMbtiResult: (String mbtiType) async {
-                            // UserSettingViewModel을 통해 MBTI 업데이트
-                            await ref
-                                .read(userSettingViewModelProvider.notifier)
-                                .updateMbti(mbtiType);
-                            mbtiController.text = mbtiType;
-                            onMbtiUpdate?.call(mbtiType);
+                            // 컨트롤러를 업데이트하고 콜백을 호출하는 로직은
+                            // onMbtiResult에서 모두 처리되므로 여기서는 값만 반환
                             return mbtiType;
                           },
                         ),
                       ),
                     );
+
+                    // 결과가 반환되면 컨트롤러 업데이트 및 ViewModel 업데이트
+                    if (mbtiResult != null && mbtiResult.isNotEmpty) {
+                      print("MBTI 결과 반환됨: $mbtiResult");
+                      mbtiController.text = mbtiResult;
+                      // ViewModel 업데이트
+                      await ref
+                          .read(userSettingViewModelProvider.notifier)
+                          .updateMbti(mbtiResult);
+                      // 콜백 호출
+                      onMbtiUpdate?.call(mbtiResult);
+                    }
                   },
                   readOnly: true,
                   focusNode: mbtiFocusNode,
