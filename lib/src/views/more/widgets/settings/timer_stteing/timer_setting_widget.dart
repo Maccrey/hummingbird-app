@@ -16,7 +16,7 @@ class TimerSettingWidget extends StatelessWidget {
       },
       leading: Icon(Icons.timer_outlined, size: 20),
       title: Text(
-        tr("TimerSetting.TimeerSetting"),
+        tr("TimerSetting.TimerSetting"),
         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
               fontWeight: FontWeight.w500,
             ),

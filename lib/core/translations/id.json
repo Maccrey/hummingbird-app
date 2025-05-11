@@ -1,0 +1,606 @@
+{
+  "DailyStatistics": {
+    "Error": "Kesalahan saat memuat data: {0}",
+    "NoData": "Tidak ada data yang tercatat hari ini."
+  },
+  "DailySummary": {
+    "GoalStudyTime": "Target waktu belajar",
+    "StudyTimeToday": "Waktu belajar hari ini",
+    "TodaySummary": "Ringkasan belajar hari ini"
+  },
+  "DDayAddScreen": {
+    "Add": "Tambah",
+    "Cancel": "Batal",
+    "Color": "Warna:",
+    "Confirm": "Konfirmasi",
+    "DDayAdd": "Tambah D-Day",
+    "Edit": "Edit",
+    "FillInAllFields": "Harap isi semua kolom.",
+    "GoalDate": "Tanggal Tujuan:",
+    "GoalTime": "Waktu Tujuan:",
+    "GoalTitle": "Judul Tujuan",
+    "Save": "Simpan",
+    "SelectDate": "Pilih tanggal",
+    "SelectTime": "Pilih waktu"
+  },
+  "DDayListTile": {
+    "AreYouSure": "Apakah Anda yakin ingin menghapus ",
+    "Cancel": "Batal",
+    "Confirm": "Konfirmasi",
+    "Delete": "Hapus",
+    "DeleteConfirmationSuffix": "?",
+    "Edit": "Edit",
+    "GoalDate": "Tanggal tujuan:",
+    "OfflineEditDeleteError": "Mengedit dan menghapus tidak tersedia secara offline.",
+    "OfflineStatus": "Status offline"
+  },
+  "DDayUpdateScreen": {
+    "Color": "Warna:",
+    "DDayEdit": "Edit D-Day",
+    "FillInAllFields": "Harap isi semua kolom.",
+    "GoalDate": "Tanggal Tujuan:",
+    "GoalTime": "Waktu Tujuan:",
+    "GoalTitle": "Judul Tujuan",
+    "Save": "Simpan"
+  },
+  "Dialog": {
+    "Cancel": "Batal",
+    "Confirm": "Konfirmasi",
+    "Focus!": "Fokus!",
+    "YouarestudyingPutyourphonedownandfocus": "Anda sedang belajar.\nLetakkan ponsel Anda dan fokus.",
+    "restoreTimer": "Ada pengatur waktu yang sudah ada. Apakah Anda ingin memulihkannya?",
+    "LogoutDialog": "Apakah Anda yakin ingin keluar?",
+    "DeleteUserDialog": "Apakah Anda yakin ingin menghapus akun Anda?"
+  },
+  "HomeSegmentBar": {
+    "Dday": "D-Day",
+    "Summary": "Ringkasan",
+    "Timer": "Pengatur Waktu"
+  },
+  "InquiryButtonWidget": {
+    "ContactUs": "Hubungi kami"
+  },
+  "LogoutButtonWidget": {
+    "Logout": "Keluar"
+  },
+  "DeleteUserButtonWidget": {
+    "DeleteUser": "Hapus Akun"
+  },
+  "MonthlyStatisticsScreen": {
+    "noData": "Tidak ada data yang tercatat."
+  },
+  "NavigationBar": {
+    "Home": "Beranda",
+    "More": "Lainnya",
+    "Social": "Peringkat",
+    "Statistics": "Statistik",
+    "Timer": "Pengatur Waktu"
+  },
+  "NotificationButton": {
+    "Alarm": "Alarm"
+  },
+  "PrivacyPolicyWidget": {
+    "PrivacyPolicy": "Kebijakan Privasi",
+    "URLCannotBeOpened": "Tidak dapat membuka URL ini.",
+    "URLFailedToOpen": "Gagal membuka URL.",
+    "URLLaunchError": "Terjadi kesalahan."
+  },
+  "ProfileInfoWidget": {
+    "birthDate": "Tanggal lahir",
+    "birthDateHint": "Daftarkan tanggal lahir Anda",
+    "nickName": "Nama panggilan",
+    "nickNameHint": "Edit Profil",
+    "save": "SIMPAN",
+    "mbtiTest": "Tes MBTI",
+    "NoMBTIResult": "Tidak ada hasil MBTI",
+    "country": "Negara",
+    "selectCountry": "Pilih Negara"
+  },
+  "ProfileSettingScreen": {
+    "loadingText": "Berusaha sebaik mungkin hari ini bersama Study Duck..."
+  },
+  "Rank": {
+    "Rank": "Peringkat Belajar",
+    "NotReady": "Data peringkat masih dalam persiapan!"
+  },
+  "SelectCountryButtonWidget": {
+    "Country": "Negara",
+    "SouthKorea": "Korea Selatan"
+  },
+  "SelectCountryContainerWidget": {
+    "FuturePlan": "Direncanakan untuk pembaruan mendatang",
+    "SouthKorea": "Korea Selatan"
+  },
+  "SelectCountryScreen": {
+    "Country": "Negara"
+  },
+  "SelectFontSizeButtonWidget": {
+    "FontSize": "Ukuran font",
+    "Large": "Besar",
+    "Medium": "Sedang",
+    "Small": "Kecil"
+  },
+  "SelectGoalDurationButtonWidget": {
+    "Complete": "Selesai",
+    "GoalStudyTime": "Target waktu belajar",
+    "TimeSelection": "Pilih waktu"
+  },
+  "SelectGroupBottomSheet": {
+    "complete": "Selesai",
+    "selectGroup": "Pilih grup"
+  },
+  "SelectGroupButtonWidget": {
+    "Group": "Grup",
+    "SelectGroupPrompt": "Pilih grup"
+  },
+  "SelectGroupScreen": {
+    "Group": "Grup"
+  },
+  "SelectLanguageButtonWidget": {
+    "Korean": "Korea",
+    "Language": "Bahasa"
+  },
+  "SelectLanguageContainerWidget": {
+    "FuturePlan": "Direncanakan untuk pembaruan mendatang",
+    "Korean": "Korea"
+  },
+  "SelectLanguageScreen": {
+    "Language": "Bahasa"
+  },
+  "SelectThemeButtonWidget": {
+    "FuturePlan": "Direncanakan untuk pembaruan mendatang",
+    "ThemeColor": "Warna tema"
+  },
+  "SetStudySettingWidget": {
+    "done": "Selesai",
+    "goalDuration": "Waktu Belajar Tujuan",
+    "group": "Grup",
+    "timePickerTitle": "Pilih Waktu"
+  },
+  "SettingButton": {
+    "Setting": "Pengaturan"
+  },
+  "SettingsScreen": {
+    "Settings": "Pengaturan",
+    "AnimationSettings": "Pengaturan Animasi",
+    "whiteNoiseAnimation": "Animasi White Noise",
+    "whiteNoiseAnimationDesc": "Tampilkan animasi laci saat white noise diputar"
+  },
+  "SetProfileWidget": {
+    "next": "Lanjut",
+    "selectBirthDate": "Pilih tanggal lahir Anda",
+    "skip": "Lewati"
+  },
+  "SocialScreen": "Layar Sosial",
+  "SplashScreen": {
+    "message": "Berusaha sebaik mungkin hari ini bersama Study Duck..."
+  },
+  "StatisticsScreen": {
+    "monthly": "Bulanan",
+    "weekly": "Mingguan"
+  },
+  "StudyBarChartWidget": {
+    "subjectStudyTime": "Waktu belajar per mata pelajaran"
+  },
+  "StudyPieChartWidget": {
+    "subjectPercentage": "Persentase mata pelajaran"
+  },
+  "StudySettingScreen": {
+    "complete": "Selesai",
+    "previous": "Sebelumnya"
+  },
+  "SubjectAddScreen": {
+    "AddSubject": "Tambah mata pelajaran",
+    "DuplicateSubject": "Mata pelajaran ini sudah ada.",
+    "Save": "Simpan",
+    "SelectColor": "Pilih warna",
+    "SubjectName": "Nama mata pelajaran"
+  },
+  "SubjectList": {
+    "AddSubject": "Tambah mata pelajaran",
+    "Cancel": "Batal",
+    "CannotUndoWarning": "Tindakan ini tidak dapat dibatalkan.",
+    "Confirm": "Konfirmasi",
+    "Delete": "Hapus",
+    "DeleteSubjectPrompt": "Apakah Anda yakin ingin menghapus mata pelajaran ini?",
+    "Edit": "Edit",
+    "EditSubject": "Edit mata pelajaran",
+    "EnterSubjectName": "Masukkan nama mata pelajaran",
+    "SelectColor": "Pilih warna",
+    "SelfStudy": "Belajar mandiri",
+    "Subject": "Mata Pelajaran",
+    "SubjectName": "Nama mata pelajaran"
+  },
+  "SubjectUpdateScreen": {
+    "EditSubject": "Edit mata pelajaran",
+    "EnterSubjectName": "Harap masukkan nama mata pelajaran.",
+    "Save": "Simpan",
+    "SelectColor": "Pilih warna",
+    "SubjectName": "Nama mata pelajaran"
+  },
+  "SummaryWidget": {
+    "averageStudyTime": "Rata-rata waktu belajar",
+    "totalStudyTime": "Total waktu belajar"
+  },
+  "Timer": {
+    "Pause": "JEDA",
+    "SelfStudy": "Belajar mandiri",
+    "Start": "MULAI"
+  },
+  "TimerControlBar": {
+    "FocusMode": "Mode Fokus",
+    "WhiteNoise": "White Noise"
+  },
+  "TimerSetting": {
+    "AutoFocusMode": "Mode Fokus Otomatis",
+    "AutoBreathingExercise": "Mode Latihan Pernapasan Otomatis",
+    "TimerSetting": "Pengaturan Pengatur Waktu",
+    "TimerMode": "Mode Pengatur Waktu"
+  },
+  "TotalDuratinosLineChartWidget": {
+    "totalStudyTime": "Total waktu belajar per hari"
+  },
+  "UserProfileWidget": {
+    "profileEdit": "Edit profil"
+  },
+  "WeeklyStatisticsScreen": {
+    "noData": "Tidak ada data yang tercatat."
+  },
+  "WhiteNoiseScreen": {
+    "Cafe": "Kafe",
+    "Rain": "Hujan",
+    "Wind": "Angin",
+    "Fire": "Api",
+    "Chime": "Bel",
+    "Stream": "Aliran",
+    "Wave": "Ombak",
+    "Bird": "Burung",
+    "Pen": "Pena",
+    "Keyboard": "Papan Ketik",
+    "chooseYourWhiteNoise": "Pilih White Noise Anda",
+    "WhiteNoise": "White Noise",
+    "No white noise playing": "Tidak ada white noise yang diputar",
+    "Volume Control": "Kontrol Volume",
+    "Close": "Tutup",
+    "Stop": "Berhenti"
+  },
+  "getBrithDateText": {
+    "birthDate": "Tanggal lahir",
+    "birthDateHint": "Daftarkan tanggal lahir Anda"
+  },
+  "mbti": {
+    "MBTIQuestion1": {
+      "question": "Saat bertemu orang baru",
+      "optionA": "Saya merasa bersemangat dan senang",
+      "optionB": "Saya merasa lebih nyaman sendirian",
+      "category": "E/I"
+    },
+    "MBTIQuestion2": {
+      "question": "Bagaimana Anda mengisi ulang energi di akhir pekan?",
+      "optionA": "Menghabiskan waktu bersama teman",
+      "optionB": "Menghabiskan waktu sendirian",
+      "category": "E/I"
+    },
+    "MBTIQuestion3": {
+      "question": "Saat mengatur pikiran",
+      "optionA": "Saya berbicara keras untuk mengaturnya",
+      "optionB": "Saya mengaturnya secara diam-diam di kepala",
+      "category": "E/I"
+    },
+    "MBTIQuestion4": {
+      "question": "Berbicara di depan banyak orang",
+      "optionA": "Terasa alami dan nyaman",
+      "optionB": "Terasa berat dan membuat nervous",
+      "category": "E/I"
+    },
+    "MBTIQuestion5": {
+      "question": "Jika bepergian sendirian",
+      "optionA": "Mungkin terasa membosankan dan kesepian",
+      "optionB": "Merasa excited dan menantikannya",
+      "category": "E/I"
+    },
+    "MBTIQuestion6": {
+      "question": "Saat mendengarkan penjelasan, yang penting adalah",
+      "optionA": "Contoh dan detail spesifik",
+      "optionB": "Alur keseluruhan dan konsep",
+      "category": "S/N"
+    },
+    "MBTIQuestion7": {
+      "question": "Saat mempelajari keterampilan baru",
+      "optionA": "Belajar langkah demi langkah mengikuti panduan",
+      "optionB": "Belajar secara intuitif melalui pengalaman langsung",
+      "category": "S/N"
+    },
+    "MBTIQuestion8": {
+      "question": "Dalam kehidupan sehari-hari",
+      "optionA": "Lebih suka lingkungan yang familiar dengan sedikit perubahan",
+      "optionB": "Menemukan pengalaman baru dan perubahan lebih menarik",
+      "category": "S/N"
+    },
+    "MBTIQuestion9": {
+      "question": "Saat bekerja atau belajar",
+      "optionA": "Memeriksa detail secara menyeluruh",
+      "optionB": "Fokus pada pemahaman alur keseluruhan",
+      "category": "S/N"
+    },
+    "MBTIQuestion10": {
+      "question": "Saat membuat penilaian",
+      "optionA": "Menilai berdasarkan pengalaman masa lalu",
+      "optionB": "Mempertimbangkan kemungkinan masa depan lebih penting",
+      "category": "S/N"
+    },
+    "MBTIQuestion11": {
+      "question": "Saat membuat keputusan penting",
+      "optionA": "Menghargai logika dan fakta objektif",
+      "optionB": "Mempertimbangkan emosi dan hubungan",
+      "category": "T/F"
+    },
+    "MBTIQuestion12": {
+      "question": "Dalam debat, yang penting adalah",
+      "optionA": "Menang dengan logika",
+      "optionB": "Mempertimbangkan perasaan orang lain",
+      "category": "T/F"
+    },
+    "MBTIQuestion13": {
+      "question": "Saat orang lain berbagi kekhawatiran mereka",
+      "optionA": "Menyarankan solusi praktis",
+      "optionB": "Berempati dengan perasaan mereka",
+      "category": "T/F"
+    },
+    "MBTIQuestion14": {
+      "question": "Saat menangani tugas, yang penting adalah",
+      "optionA": "Efisiensi dan logika",
+      "optionB": "Kerjasama tim dan suasana",
+      "category": "T/F"
+    },
+    "MBTIQuestion15": {
+      "question": "Saat membuat keputusan",
+      "optionA": "Menilai berdasarkan benar dan salah",
+      "optionB": "Mempertimbangkan perasaan orang lain",
+      "category": "T/F"
+    },
+    "MBTIQuestion16": {
+      "question": "Manajemen jadwal",
+      "optionA": "Suka merencanakan sebelumnya dan mematuhinya",
+      "optionB": "Bertindak secara fleksibel dan spontan",
+      "category": "J/P"
+    },
+    "MBTIQuestion17": {
+      "question": "Saat pergi berlibur",
+      "optionA": "Membuat rencana terperinci",
+      "optionB": "Memutuskan secara spontan di tempat",
+      "category": "J/P"
+    },
+    "MBTIQuestion18": {
+      "question": "Saat ada tenggat waktu",
+      "optionA": "Lebih suka menyelesaikan lebih awal",
+      "optionB": "Menyesuaikan secara fleksibel hingga menit terakhir",
+      "category": "J/P"
+    },
+    "MBTIQuestion19": {
+      "question": "Lingkungan yang disukai",
+      "optionA": "Ruang yang terorganisir dan rapi",
+      "optionB": "Ruang dengan suasana bebas",
+      "category": "J/P"
+    },
+    "MBTIQuestion20": {
+      "question": "Saat rencana berubah",
+      "optionA": "Merasa tidak nyaman",
+      "optionB": "Beradaptasi secara fleksibel",
+      "category": "J/P"
+    }
+  },
+  "mbtiResult": {
+    "quickInfo": "📚 Info Pembelajaran Cepat",
+    "learningGuide": "🎯 Panduan Metode Pembelajaran",
+    "consultingSummary": "💡 Ringkasan Konsultasi Pembelajaran",
+    "recommendedTime": "Waktu Belajar yang Direkomendasikan",
+    "dailyStudyTime": "Jam Belajar Harian yang Direkomendasikan",
+    "strongSubjects": "Mata Pelajaran yang Kuat",
+    "weakSubjects": "Mata Pelajaran yang Lemah",
+    "learningMethod": "Metode Pembelajaran",
+    "timeManagement": "Manajemen Waktu",
+    "analysisTitle": "Laporan Analisis Gaya Belajar MBTI",
+    "analysisResult": "Hasil Analisis Tipe Pembelajaran",
+    "confirm": "Konfirmasi",
+    "shareComplete": "Berbagi selesai",
+    "shareFailed": "Berbagi gagal",
+    "myMBTIStyle": "Gaya Belajar MBTI Saya",
+    "CheckMyMBTI": "Periksa hasil gaya belajar MBTI saya!\n#StudyDuck #StudyDuck #MBTILearning",
+    "MBTILearningStyleTest": "Tes Gaya Belajar MBTI",
+    "question": "Pertanyaan",
+    "MBTINotTest": "Anda belum mengikuti tes MBTI. Silakan ikuti tesnya.",
+    "error": "Kesalahan",
+    "Tryagain": "Coba lagi",
+    "Failedtoloadthequestion": "Gagal memuat pertanyaan.",
+    "GoTest": "Ikuti Tes",
+    "permissionDenied": "Izin ditolak",
+    "permissionTitle": "Izin",
+    "openSettings": "Buka Pengaturan"
+  },
+  "mbtiTypeResult": {
+    "ISTJ": {
+      "learningMethod": "Lebih suka pendekatan sistematis dan logis, dengan pembelajaran terencana menjadi penting.",
+      "timeManagement": "Mengikuti jadwal yang ditetapkan sangat efisien.",
+      "recommendedTime": "Pagi atau Malam, Lingkungan yang Tenang",
+      "dailyStudyTime": "2~4 jam",
+      "strongSubjects": "Matematika, Sains, Sejarah",
+      "weakSubjects": "Sastra, Seni, Filsafat",
+      "consultingSummary": "ISTJ dapat belajar secara efektif melalui perencanaan menyeluruh dan pendekatan sistematis. Mereka menunjukkan performa luar biasa dalam mata pelajaran seperti matematika, sains, dan sejarah. Penting untuk belajar secara konsisten dalam waktu dan lingkungan yang teratur, menunjukkan kekuatan dalam mata pelajaran praktis dan logis. Mereka mungkin kesulitan dengan mata pelajaran kreatif dan emosional seperti sastra, seni, dan filsafat, sehingga efektif untuk mempelajari mata pelajaran ini melalui contoh praktis. Mereka dapat mencapai hasil yang luar biasa dengan belajar secara konsisten pada waktu yang ditetapkan setiap hari dan menetapkan tujuan."
+    },
+    "ISFJ": {
+      "learningMethod": "Efektif melalui pembelajaran berulang dan perhatian terhadap detail",
+      "timeManagement": "Penting untuk membuat dan mengikuti rencana sebelumnya",
+      "recommendedTime": "Sore, lingkungan yang stabil",
+      "dailyStudyTime": "2~3 jam",
+      "strongSubjects": "Sejarah, Biologi, Studi Sosial, Sastra",
+      "weakSubjects": "Matematika, Fisika, Pendidikan Jasmani",
+      "consultingSummary": "ISFJ dapat mencapai hasil melalui pembelajaran berulang. Mereka menunjukkan performa luar biasa dalam mata pelajaran seperti sejarah, sastra, dan studi sosial, dan dapat belajar secara akurat dengan memperhatikan detail. Mereka mungkin menemukan mata pelajaran teoritis dan abstrak seperti matematika dan fisika menantang. Baik untuk menetapkan dan mengikuti rencana harian secara konsisten, dan penting untuk menyelesaikan satu mata pelajaran secara menyeluruh meskipun kemajuannya lambat. Mereka dapat mencapai hasil dengan berkonsentrasi di lingkungan yang stabil."
+    },
+    "INFJ": {
+      "learningMethod": "Menghargai pemahaman mendalam dan wawasan, efektif melalui pencarian makna",
+      "timeManagement": "Memerlukan penetapan tujuan jangka panjang dan refleksi diri",
+      "recommendedTime": "Malam, ruang yang tenang",
+      "dailyStudyTime": "3~5 jam",
+      "strongSubjects": "Sastra, Filsafat, Psikologi",
+      "weakSubjects": "Matematika, Fisika",
+      "consultingSummary": "INFJ belajar melalui eksplorasi mendalam dan wawasan. Mereka unggul dalam mata pelajaran seperti sastra, filsafat, dan psikologi. Mereka mencari hubungan yang bermakna saat belajar, sehingga motivasi sangat penting. Mereka mungkin menemukan mata pelajaran konkret seperti matematika atau fisika menantang, dan bermanfaat untuk mendekati mata pelajaran ini dengan memecah konsep dasar terlebih dahulu. Mereka terus menyesuaikan metode belajar mereka melalui refleksi diri, fokus pada tujuan jangka panjang dan pengembangan berkelanjutan."
+    },
+    "INTJ": {
+      "learningMethod": "Lebih suka pembelajaran logis dan sistematis, dengan pendekatan strategis menjadi penting",
+      "timeManagement": "Harus menetapkan rencana jangka panjang dan mengalokasikan waktu secara efisien",
+      "recommendedTime": "Fajar atau Malam",
+      "dailyStudyTime": "4~6 jam",
+      "strongSubjects": "Matematika, Sains, Logika",
+      "weakSubjects": "Pendidikan Jasmani, Seni",
+      "consultingSummary": "INTJ dapat belajar secara efektif melalui perencanaan menyeluruh dan pendekatan strategis. Mereka menunjukkan performa luar biasa dalam mata pelajaran seperti matematika, sains, dan logika. Mereka dapat mencapai pemahaman mendalam melalui pembelajaran mandiri. Namun, mereka mungkin terlalu perfeksionis, yang dapat memperlambat laju belajar mereka. Mereka mungkin kesulitan dengan mata pelajaran seperti pendidikan jasmani dan seni, sehingga efektif untuk mendekati mata pelajaran ini melalui contoh praktis. Menetapkan tujuan dan tenggat waktu yang realistis dapat memaksimalkan efisiensi belajar mereka."
+    },
+    "ISTP": {
+      "learningMethod": "Efektif melalui pengalaman langsung dan praktik",
+      "timeManagement": "Lebih suka pembelajaran spontan, memerlukan rencana yang fleksibel",
+      "recommendedTime": "Siang, lingkungan aktif",
+      "dailyStudyTime": "2~4 jam",
+      "strongSubjects": "Teknik, Fisika, Ilmu Komputer",
+      "weakSubjects": "Filsafat, Sastra",
+      "consultingSummary": "ISTP dapat belajar dengan cepat melalui pengalaman langsung dan praktik. Mereka menunjukkan kekuatan dalam mata pelajaran praktis dan logis seperti teknik, fisika, dan ilmu komputer. Namun, mereka mungkin menemukan mata pelajaran teoritis seperti filsafat dan sastra menantang, sehingga efektif untuk mendekati mata pelajaran ini melalui contoh praktis. Penting untuk menjaga fleksibilitas dalam manajemen waktu dan rencana belajar, serta menciptakan lingkungan di mana mereka dapat fokus."
+    },
+    "ISFP": {
+      "learningMethod": "Lebih suka pendekatan sensorik dan praktis, menyukai pembelajaran praktis",
+      "timeManagement": "Efektif melalui pembelajaran bebas, tetapi perencanaan dasar diperlukan",
+      "recommendedTime": "Sore atau Malam",
+      "dailyStudyTime": "2~3 jam",
+      "strongSubjects": "Seni, Desain, Biologi",
+      "weakSubjects": "Matematika, Logika",
+      "consultingSummary": "ISFP dapat belajar secara efektif melalui pendekatan kreatif dan sensorik. Mereka menunjukkan performa luar biasa dalam mata pelajaran kreatif dan intuitif seperti seni, desain, dan biologi. Mereka mungkin menemukan mata pelajaran teoritis dan analitis seperti matematika dan logika menantang, sehingga efektif untuk mendekati mata pelajaran ini melalui contoh praktis. Metode pembelajaran bebas dan fleksibel sangat menguntungkan, dan penting untuk terus belajar secara mandiri."
+    },
+    "INFP": {
+      "learningMethod": "Lebih suka pembelajaran emosional dan bermakna, menikmati eksplorasi mendalam",
+      "timeManagement": "Penting untuk mempertahankan kecepatan mereka sendiri",
+      "recommendedTime": "Malam, ruang yang tenang",
+      "dailyStudyTime": "3~5 jam",
+      "strongSubjects": "Sastra, Psikologi, Sosiologi",
+      "weakSubjects": "Matematika, Sains",
+      "consultingSummary": "INFP mendekati pembelajaran secara kreatif dan penuh semangat. Mereka menunjukkan performa luar biasa dalam mata pelajaran yang berkaitan dengan orang, seperti sastra, psikologi, dan sosiologi, dan terus belajar melalui ide-ide baru. Mereka mungkin menemukan mata pelajaran kalkulatif dan terstruktur seperti matematika dan sains menantang. Perencanaan fleksibel dan sering mengubah metode belajar sangat efektif, dan penting untuk menikmati pembelajaran dan mendekatinya secara kreatif."
+    },
+    "INTP": {
+      "learningMethod": "Efektif melalui eksplorasi konsep teoritis dan pendekatan eksperimental",
+      "timeManagement": "Memerlukan jadwal yang fleksibel, kadang-kadang mencoba pembelajaran spontan",
+      "recommendedTime": "Fajar, lingkungan yang tenang",
+      "dailyStudyTime": "4~6 jam",
+      "strongSubjects": "Filsafat, Sains, Matematika",
+      "weakSubjects": "Seni, Pendidikan Jasmani",
+      "consultingSummary": "INTP maju melalui pendekatan logis dan teoritis, menunjukkan kekuatan dalam memecahkan masalah dari berbagai perspektif. Mereka menunjukkan performa luar biasa dalam mata pelajaran seperti filsafat, sains, dan matematika, menikmati pemecahan masalah kompleks dari berbagai sudut. Mereka mungkin menemukan mata pelajaran emosional dan praktis seperti seni dan pendidikan jasmani menantang, sehingga efektif untuk mendekati mata pelajaran ini melalui contoh yang lebih konkret dan praktis. Manajemen waktu bebas dan pembelajaran spontan juga efektif."
+    },
+    "ESTP": {
+      "learningMethod": "Lebih suka pendekatan eksperimental dan intuitif, efektif melalui pembelajaran aktif",
+      "timeManagement": "Merencanakan secara fleksibel dan mencoba pembelajaran spontan",
+      "recommendedTime": "Siang, lingkungan aktif",
+      "dailyStudyTime": "3~5 jam",
+      "strongSubjects": "Fisika, Matematika, Teknik",
+      "weakSubjects": "Sastra, Filsafat",
+      "consultingSummary": "ESTP menunjukkan kekuatan dalam pembelajaran melalui metode eksperimental. Mereka unggul dalam mata pelajaran seperti fisika, teknik, dan matematika, mendekati pembelajaran dengan memecahkan masalah nyata. Mereka mungkin menemukan mata pelajaran abstrak seperti sastra dan filsafat menantang. Ideal untuk belajar di lingkungan aktif dan eksperimental, dan perencanaan waktu yang fleksibel sangat efektif."
+    },
+    "ESFP": {
+      "learningMethod": "Lebih suka pendekatan sensorik dan praktis, belajar secara aktif dan menyenangkan",
+      "timeManagement": "Menikmati pembelajaran melalui perencanaan bebas",
+      "recommendedTime": "Sore, lingkungan aktif",
+      "dailyStudyTime": "3~4 jam",
+      "strongSubjects": "Seni, Studi Sosial, Biologi",
+      "weakSubjects": "Matematika, Fisika",
+      "consultingSummary": "ESFP lebih suka pembelajaran praktis dan sensorik. Mereka menunjukkan performa luar biasa dalam mata pelajaran kreatif dan intuitif seperti seni, studi sosial, dan biologi. Mereka mungkin menemukan mata pelajaran teoritis seperti matematika dan fisika menantang, sehingga pendekatan yang lebih praktis diperlukan. Pembelajaran efektif ketika menyenangkan dan aktif, dan penting untuk terus belajar dengan manajemen waktu bebas dan metode kreatif."
+    },
+    "ENFP": {
+      "learningMethod": "Lebih suka pendekatan kreatif dan penuh semangat, mencoba ide-ide baru",
+      "timeManagement": "Belajar melalui perencanaan fleksibel dan perubahan yang sering",
+      "recommendedTime": "Sore, lingkungan kreatif",
+      "dailyStudyTime": "3~5 jam",
+      "strongSubjects": "Sastra, Psikologi, Sosiologi",
+      "weakSubjects": "Matematika, Sains",
+      "consultingSummary": "ENFP mendekati pembelajaran secara kreatif dan penuh semangat. Mereka menunjukkan performa luar biasa dalam mata pelajaran yang berkaitan dengan orang, seperti sastra, psikologi, dan sosiologi, dan terus belajar melalui ide-ide baru. Mereka mungkin menemukan mata pelajaran kalkulatif dan terstruktur seperti matematika dan sains menantang. Perencanaan fleksibel dan sering mengubah metode belajar sangat efektif, dan penting untuk menikmati pembelajaran dan mendekatinya secara kreatif."
+    },
+    "ENTP": {
+      "learningMethod": "Lebih suka pendekatan logis dan teoritis, memecahkan masalah dari berbagai perspektif",
+      "timeManagement": "Memerlukan manajemen waktu bebas, kadang-kadang mencoba pembelajaran spontan",
+      "recommendedTime": "Malam, lingkungan yang merangsang",
+      "dailyStudyTime": "4~6 jam",
+      "strongSubjects": "Filsafat, Sains, Matematika",
+      "weakSubjects": "Seni, Pendidikan Jasmani",
+      "consultingSummary": "ENTP maju melalui pendekatan logis dan teoritis, menunjukkan kekuatan dalam memecahkan masalah dari berbagai perspektif. Mereka menunjukkan performa luar biasa dalam mata pelajaran seperti filsafat, sains, dan matematika, menikmati pemecahan masalah kompleks dari berbagai sudut. Mereka mungkin menemukan mata pelajaran emosional dan praktis seperti seni dan pendidikan jasmani menantang, sehingga efektif untuk mendekati mata pelajaran ini melalui contoh yang lebih konkret dan praktis. Manajemen waktu bebas dan pembelajaran spontan juga efektif."
+    },
+    "ESTJ": {
+      "learningMethod": "Lebih suka pendekatan terstruktur dan sistematis, dengan penetapan tujuan dan perencanaan yang jelas menjadi penting",
+      "timeManagement": "Efektif melalui jadwal yang ketat",
+      "recommendedTime": "Pagi, lingkungan yang terorganisir",
+      "dailyStudyTime": "3~5 jam",
+      "strongSubjects": "Matematika, Bisnis, Ekonomi",
+      "weakSubjects": "Seni, Psikologi",
+      "consultingSummary": "ESTJ lebih suka metode pembelajaran yang sangat terstruktur dan sistematis. Mereka menunjukkan performa luar biasa dalam mata pelajaran praktis dan konkret seperti matematika, bisnis, dan ekonomi. Namun, mereka mungkin menemukan mata pelajaran kreatif dan emosional seperti seni dan psikologi menantang. Penting untuk menetapkan tujuan yang jelas dan mengelola waktu secara ketat, maju melalui rencana belajar yang efisien untuk mencapai performa tinggi."
+    },
+    "ESFJ": {
+      "learningMethod": "Lebih suka pendekatan sosial dan kooperatif, belajar secara efektif bersama orang lain",
+      "timeManagement": "Merencanakan sebelumnya dan belajar melalui interaksi dengan orang",
+      "recommendedTime": "Sore, lingkungan yang nyaman",
+      "dailyStudyTime": "3~4 jam",
+      "strongSubjects": "Sosiologi, Sejarah, Linguistik",
+      "weakSubjects": "Matematika, Fisika",
+      "consultingSummary": "ESFJ dapat mencapai hasil melalui metode pembelajaran sosial dan kooperatif. Mereka menunjukkan performa luar biasa dalam mata pelajaran seperti sosiologi, sejarah, dan linguistik, menikmati pembelajaran melalui interaksi dengan orang lain. Mereka mungkin menemukan mata pelajaran seperti matematika dan fisika menantang, sehingga pendekatan yang lebih konkret dan sistematis diperlukan. Belajar bersama orang lain atau dalam kegiatan kelompok dapat memaksimalkan efektivitas belajar mereka."
+    },
+    "ENFJ": {
+      "learningMethod": "Menghargai komunikasi dengan orang, fokus pada aspek emosional dan motivasi",
+      "timeManagement": "Belajar secara efisien melalui interaksi dan kerjasama dengan orang",
+      "recommendedTime": "Pagi, lingkungan positif",
+      "dailyStudyTime": "3~5 jam",
+      "strongSubjects": "Psikologi, Sastra, Sosiologi",
+      "weakSubjects": "Matematika, Fisika",
+      "consultingSummary": "ENFJ maju melalui komunikasi dengan orang. Mereka menunjukkan performa luar biasa dalam mata pelajaran seperti psikologi, sastra, dan sosiologi, menghargai pertukaran pendapat dan kerjasama dengan orang lain selama pembelajaran. Mereka mungkin menemukan mata pelajaran seperti matematika dan fisika menantang, sehingga bermanfaat untuk mendekati mata pelajaran ini melalui metode emosional dan intuitif. Belajar di lingkungan positif dan kooperatif dapat memberikan motivasi yang lebih besar."
+    },
+    "ENTJ": {
+      "learningMethod": "Lebih suka pendekatan terstruktur dan berorientasi pada tujuan, menetapkan strategi yang efisien",
+      "timeManagement": "Belajar melalui manajemen waktu dan perencanaan yang ketat",
+      "recommendedTime": "Pagi, lingkungan yang fokus",
+      "dailyStudyTime": "4~6 jam",
+      "strongSubjects": "Bisnis, Ekonomi, Matematika",
+      "weakSubjects": "Seni, Sastra",
+      "consultingSummary": "ENTJ lebih suka penetapan tujuan yang jelas dan pendekatan terstruktur untuk pembelajaran. Mereka menunjukkan performa luar biasa dalam mata pelajaran logis dan analitis seperti bisnis, ekonomi, dan matematika. Mereka mungkin menemukan mata pelajaran kreatif dan emosional seperti seni dan sastra menantang, sehingga metode pembelajaran yang lebih praktis dan terstruktur diperlukan. Manajemen waktu yang ketat dan perencanaan yang efisien sangat penting, selalu menetapkan tujuan yang jelas dan fokus pada pembelajaran secara intensif."
+    }
+  },
+  "MBTIResoltScreen": {
+    "MyMBTIresult": "Hasil MBTI Saya"
+  },
+  "License": {
+    "License": "Lisensi"
+  },
+  "BreathingExercise": {
+    "Intro": "Teknik pernapasan ini diperkenalkan oleh Dr. Andrew Weil. \nIni efektif untuk menenangkan sistem saraf dengan cepat, meredakan stres, dan meningkatkan konsentrasi. \n\n Kami sekarang akan melanjutkan dengan latihan pernapasan 4-7-8.",
+    "Inhale": "Tutup mulut Anda dan tarik napas perlahan melalui hidung selama 4 detik.",
+    "Hold": "Tahan napas Anda selama 7 detik.",
+    "Exhale": "Hembuskan napas perlahan dan sepenuhnya melalui mulut selama 8 detik, membuat suara \"whoosh\".",
+    "Completed": "Latihan pernapasan selesai!",
+    "Repetition": "Pengulangan"
+  },
+  "Common": {
+    "Advertisement": "Latihan Pernapasan 4-7-8",
+    "Close": "Mulai Belajar",
+    "Retry": "Coba Lagi"
+  },
+  "study_group": {
+    "worker": "Pekerja",
+    "university_student": "Mahasiswa",
+    "high_school_3rd": "Siswa SMA Kelas 3",
+    "high_school_2nd": "Siswa SMA Kelas 2",
+    "high_school_1st": "Siswa SMA Kelas 1",
+    "middle_school_student": "Siswa SMP",
+    "elementary_student": "Siswa SD"
+  },
+  "StudyGrass": {
+    "MonthRange": "{0} - {1}",
+    "StudyTime": "Waktu Belajar",
+    "Duration": {
+      "Zero": "0j",
+      "UnderOneHour": "~1j",
+      "UnderTwoHours": "~2j",
+      "UnderFourHours": "~4j",
+      "OverFourHours": "4j+"
+    }
+  }
+}

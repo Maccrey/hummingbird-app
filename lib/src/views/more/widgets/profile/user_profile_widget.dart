@@ -42,10 +42,25 @@ class UserProfileWidget extends ConsumerWidget {
                           Row(
                             children: [
                               Text(tr("ProfileInfoWidget.nickName")),
+                              Text(" : "),
+                              if (userSetting.country != null &&
+                                  userSetting.country!.isNotEmpty)
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 4.0),
+                                  child: Image.asset(
+                                    'lib/core/imgs/flags/${userSetting.country}.png',
+                                    width: 24,
+                                    height: 18,
+                                    errorBuilder:
+                                        (context, error, stackTrace) =>
+                                            SizedBox.shrink(),
+                                  ),
+                                ),
                               Expanded(
                                 child: Text(
-                                  " : ${userSetting.nickname}",
+                                  userSetting.nickname ?? '',
                                   overflow: TextOverflow.ellipsis,
+                                  maxLines: 1,
                                 ),
                               ),
                             ],

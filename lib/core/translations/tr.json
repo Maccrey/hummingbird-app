@@ -1,0 +1,606 @@
+{
+  "DailyStatistics": {
+    "Error": "Veri yükleme hatası: {0}",
+    "NoData": "Bugün kaydedilmiş veri yok."
+  },
+  "DailySummary": {
+    "GoalStudyTime": "Hedef çalışma süresi",
+    "StudyTimeToday": "Bugünün çalışma süresi",
+    "TodaySummary": "Bugünün çalışma özeti"
+  },
+  "DDayAddScreen": {
+    "Add": "Ekle",
+    "Cancel": "İptal",
+    "Color": "Renk:",
+    "Confirm": "Onayla",
+    "DDayAdd": "D-Günü Ekle",
+    "Edit": "Düzenle",
+    "FillInAllFields": "Lütfen tüm alanları doldurun.",
+    "GoalDate": "Hedef Tarih:",
+    "GoalTime": "Hedef Saat:",
+    "GoalTitle": "Hedef Başlık",
+    "Save": "Kaydet",
+    "SelectDate": "Tarih seç",
+    "SelectTime": "Saat seç"
+  },
+  "DDayListTile": {
+    "AreYouSure": "Silmek istediğinizden emin misiniz ",
+    "Cancel": "İptal",
+    "Confirm": "Onayla",
+    "Delete": "Sil",
+    "DeleteConfirmationSuffix": "?",
+    "Edit": "Düzenle",
+    "GoalDate": "Hedef tarih:",
+    "OfflineEditDeleteError": "Çevrimdışı düzenleme ve silme işlemleri yapılamaz.",
+    "OfflineStatus": "Çevrimdışı durum"
+  },
+  "DDayUpdateScreen": {
+    "Color": "Renk:",
+    "DDayEdit": "D-Günü Düzenle",
+    "FillInAllFields": "Lütfen tüm alanları doldurun.",
+    "GoalDate": "Hedef Tarih:",
+    "GoalTime": "Hedef Saat:",
+    "GoalTitle": "Hedef Başlık",
+    "Save": "Kaydet"
+  },
+  "Dialog": {
+    "Cancel": "İptal",
+    "Confirm": "Onayla",
+    "Focus!": "Odaklan!",
+    "YouarestudyingPutyourphonedownandfocus": "Çalışıyorsun.\nTelefonunu bırak ve odaklan.",
+    "restoreTimer": "Mevcut bir zamanlayıcı var. Geri yüklemek ister misiniz?",
+    "LogoutDialog": "Oturumu kapatmak istediğinizden emin misiniz?",
+    "DeleteUserDialog": "Hesabınızı silmek istediğinizden emin misiniz?"
+  },
+  "HomeSegmentBar": {
+    "Dday": "D-Günü",
+    "Summary": "Özet",
+    "Timer": "Zamanlayıcı"
+  },
+  "InquiryButtonWidget": {
+    "ContactUs": "Bize ulaşın"
+  },
+  "LogoutButtonWidget": {
+    "Logout": "Oturumu Kapat"
+  },
+  "DeleteUserButtonWidget": {
+    "DeleteUser": "Hesabı Sil"
+  },
+  "MonthlyStatisticsScreen": {
+    "noData": "Kaydedilmiş veri yok."
+  },
+  "NavigationBar": {
+    "Home": "Ana Sayfa",
+    "More": "Daha Fazla",
+    "Social": "Sıralama",
+    "Statistics": "İstatistikler",
+    "Timer": "Zamanlayıcı"
+  },
+  "NotificationButton": {
+    "Alarm": "Alarm"
+  },
+  "PrivacyPolicyWidget": {
+    "PrivacyPolicy": "Gizlilik Politikası",
+    "URLCannotBeOpened": "Bu URL açılamıyor.",
+    "URLFailedToOpen": "URL açma başarısız.",
+    "URLLaunchError": "Bir hata oluştu."
+  },
+  "ProfileInfoWidget": {
+    "birthDate": "Doğum tarihi",
+    "birthDateHint": "Doğum tarihinizi kaydedin",
+    "nickName": "Takma ad",
+    "nickNameHint": "Profili Düzenle",
+    "save": "KAYDET",
+    "mbtiTest": "MBTI Testi",
+    "NoMBTIResult": "MBTI sonucu yok",
+    "country": "Ülke",
+    "selectCountry": "Ülke Seç"
+  },
+  "ProfileSettingScreen": {
+    "loadingText": "Study Duck ile bugün en iyisini yapıyorsun..."
+  },
+  "Rank": {
+    "Rank": "Çalışma Sıralaması",
+    "NotReady": "Sıralama verileri henüz hazırlanıyor!"
+  },
+  "SelectCountryButtonWidget": {
+    "Country": "Ülke",
+    "SouthKorea": "Güney Kore"
+  },
+  "SelectCountryContainerWidget": {
+    "FuturePlan": "Gelecek güncellemeler için planlandı",
+    "SouthKorea": "Güney Kore"
+  },
+  "SelectCountryScreen": {
+    "Country": "Ülke"
+  },
+  "SelectFontSizeButtonWidget": {
+    "FontSize": "Yazı tipi boyutu",
+    "Large": "Büyük",
+    "Medium": "Orta",
+    "Small": "Küçük"
+  },
+  "SelectGoalDurationButtonWidget": {
+    "Complete": "Tamamla",
+    "GoalStudyTime": "Hedef çalışma süresi",
+    "TimeSelection": "Saat seç"
+  },
+  "SelectGroupBottomSheet": {
+    "complete": "Tamamla",
+    "selectGroup": "Grup seç"
+  },
+  "SelectGroupButtonWidget": {
+    "Group": "Grup",
+    "SelectGroupPrompt": "Bir grup seç"
+  },
+  "SelectGroupScreen": {
+    "Group": "Grup"
+  },
+  "SelectLanguageButtonWidget": {
+    "Korean": "Korece",
+    "Language": "Dil"
+  },
+  "SelectLanguageContainerWidget": {
+    "FuturePlan": "Gelecek güncellemeler için planlandı",
+    "Korean": "Korece"
+  },
+  "SelectLanguageScreen": {
+    "Language": "Dil"
+  },
+  "SelectThemeButtonWidget": {
+    "FuturePlan": "Gelecek güncellemeler için planlandı",
+    "ThemeColor": "Tema rengi"
+  },
+  "SetStudySettingWidget": {
+    "done": "Tamam",
+    "goalDuration": "Hedef Çalışma Süresi",
+    "group": "Grup",
+    "timePickerTitle": "Saat Seç"
+  },
+  "SettingButton": {
+    "Setting": "Ayarlar"
+  },
+  "SettingsScreen": {
+    "Settings": "Ayarlar",
+    "AnimationSettings": "Animasyon Ayarları",
+    "whiteNoiseAnimation": "Beyaz Gürültü Animasyonu",
+    "whiteNoiseAnimationDesc": "Beyaz gürültü çalarken çekmece animasyonunu göster"
+  },
+  "SetProfileWidget": {
+    "next": "İleri",
+    "selectBirthDate": "Doğum tarihinizi seçin",
+    "skip": "Atla"
+  },
+  "SocialScreen": "Sosyal ekran",
+  "SplashScreen": {
+    "message": "Study Duck ile bugün en iyisini yapıyorsun..."
+  },
+  "StatisticsScreen": {
+    "monthly": "Aylık",
+    "weekly": "Haftalık"
+  },
+  "StudyBarChartWidget": {
+    "subjectStudyTime": "Ders başına çalışma süresi"
+  },
+  "StudyPieChartWidget": {
+    "subjectPercentage": "Ders yüzdesi"
+  },
+  "StudySettingScreen": {
+    "complete": "Tamamla",
+    "previous": "Önceki"
+  },
+  "SubjectAddScreen": {
+    "AddSubject": "Ders ekle",
+    "DuplicateSubject": "Bu ders zaten mevcut.",
+    "Save": "Kaydet",
+    "SelectColor": "Renk seç",
+    "SubjectName": "Ders adı"
+  },
+  "SubjectList": {
+    "AddSubject": "Ders ekle",
+    "Cancel": "İptal",
+    "CannotUndoWarning": "Bu işlem geri alınamaz.",
+    "Confirm": "Onayla",
+    "Delete": "Sil",
+    "DeleteSubjectPrompt": "Bu dersi silmek istediğinizden emin misiniz?",
+    "Edit": "Düzenle",
+    "EditSubject": "Dersi düzenle",
+    "EnterSubjectName": "Ders adı gir",
+    "SelectColor": "Renk seç",
+    "SelfStudy": "Kendi kendine çalışma",
+    "Subject": "Ders",
+    "SubjectName": "Ders adı"
+  },
+  "SubjectUpdateScreen": {
+    "EditSubject": "Dersi düzenle",
+    "EnterSubjectName": "Lütfen ders adını girin.",
+    "Save": "Kaydet",
+    "SelectColor": "Renk seç",
+    "SubjectName": "Ders adı"
+  },
+  "SummaryWidget": {
+    "averageStudyTime": "Ortalama çalışma süresi",
+    "totalStudyTime": "Toplam çalışma süresi"
+  },
+  "Timer": {
+    "Pause": "DURAKLAT",
+    "SelfStudy": "Kendi kendine çalışma",
+    "Start": "BAŞLAT"
+  },
+  "TimerControlBar": {
+    "FocusMode": "Odak modu",
+    "WhiteNoise": "Beyaz gürültü"
+  },
+  "TimerSetting": {
+    "AutoFocusMode": "Otomatik Odak Modu",
+    "AutoBreathingExercise": "Otomatik Nefes Egzersizi Modu",
+    "TimerSetting": "Zamanlayıcı Ayarı",
+    "TimerMode": "Zamanlayıcı Modu"
+  },
+  "TotalDuratinosLineChartWidget": {
+    "totalStudyTime": "Günlük toplam çalışma süresi"
+  },
+  "UserProfileWidget": {
+    "profileEdit": "Profili düzenle"
+  },
+  "WeeklyStatisticsScreen": {
+    "noData": "Kaydedilmiş veri yok."
+  },
+  "WhiteNoiseScreen": {
+    "Cafe": "Kafe",
+    "Rain": "Yağmur",
+    "Wind": "Rüzgar",
+    "Fire": "Ateş",
+    "Chime": "Çan",
+    "Stream": "Dere",
+    "Wave": "Dalga",
+    "Bird": "Kuş",
+    "Pen": "Kalem",
+    "Keyboard": "Klavye",
+    "chooseYourWhiteNoise": "Beyaz Gürültünüzü Seçin",
+    "WhiteNoise": "Beyaz Gürültü",
+    "No white noise playing": "Beyaz gürültü çalmıyor",
+    "Volume Control": "Ses Kontrolü",
+    "Close": "Kapat",
+    "Stop": "Durdur"
+  },
+  "getBrithDateText": {
+    "birthDate": "Doğum tarihi",
+    "birthDateHint": "Doğum tarihinizi kaydedin"
+  },
+  "mbti": {
+    "MBTIQuestion1": {
+      "question": "Yeni insanlarla tanışırken",
+      "optionA": "Enerjik ve mutlu hissediyorum",
+      "optionB": "Yalnız olmayı daha rahat buluyorum",
+      "category": "E/I"
+    },
+    "MBTIQuestion2": {
+      "question": "Hafta sonları nasıl enerji toplarsınız?",
+      "optionA": "Arkadaşlarla vakit geçirerek",
+      "optionB": "Yalnız vakit geçirerek",
+      "category": "E/I"
+    },
+    "MBTIQuestion3": {
+      "question": "Düşüncelerinizi düzenlerken",
+      "optionA": "Yüksek sesle konuşarak düzenlerim",
+      "optionB": "Sessizce zihnimde düzenlerim",
+      "category": "E/I"
+    },
+    "MBTIQuestion4": {
+      "question": "Birçok insanın önünde konuşmak",
+      "optionA": "Doğal ve rahat hissettirir",
+      "optionB": "Yorucu ve gergin hissettirir",
+      "category": "E/I"
+    },
+    "MBTIQuestion5": {
+      "question": "Yalnız seyahat ediyorsanız",
+      "optionA": "Sıkıcı ve yalnız hissedebilir",
+      "optionB": "Heyecan verici ve keyifli gelir",
+      "category": "E/I"
+    },
+    "MBTIQuestion6": {
+      "question": "Açıklamaları dinlerken önemli olan",
+      "optionA": "Somut örnekler ve detaylar",
+      "optionB": "Genel akış ve kavramlar",
+      "category": "S/N"
+    },
+    "MBTIQuestion7": {
+      "question": "Yeni beceriler öğrenirken",
+      "optionA": "Kılavuzu takip ederek adım adım öğrenirim",
+      "optionB": "Uygulamalı deneyimle sezgisel olarak öğrenirim",
+      "category": "S/N"
+    },
+    "MBTIQuestion8": {
+      "question": "Günlük hayatta",
+      "optionA": "Az değişen tanıdık ortamları tercih ederim",
+      "optionB": "Yeni deneyimler ve değişiklikler daha ilginç gelir",
+      "category": "S/N"
+    },
+    "MBTIQuestion9": {
+      "question": "Çalışırken veya öğrenirken",
+      "optionA": "Detayları dikkatlice kontrol ederim",
+      "optionB": "Genel akışı anlamaya odaklanırım",
+      "category": "S/N"
+    },
+    "MBTIQuestion10": {
+      "question": "Yargıya varırken",
+      "optionA": "Geçmiş deneyimlere dayanarak şu anı değerlendiririm",
+      "optionB": "Gelecek olasılıklarını daha önemli bulurum",
+      "category": "S/N"
+    },
+    "MBTIQuestion11": {
+      "question": "Önemli kararlar alırken",
+      "optionA": "Mantık ve nesnel gerçeklere değer veririm",
+      "optionB": "Duyguları ve ilişkileri dikkate alırım",
+      "category": "T/F"
+    },
+    "MBTIQuestion12": {
+      "question": "Tartışmalarda önemli olan",
+      "optionA": "Mantıkla kazanmak",
+      "optionB": "Başkalarının duygularını dikkate almak",
+      "category": "T/F"
+    },
+    "MBTIQuestion13": {
+      "question": "Başkaları endişelerini paylaştığında",
+      "optionA": "Pratik çözümler öneririm",
+      "optionB": "Onların duygularına empati yaparım",
+      "category": "T/F"
+    },
+    "MBTIQuestion14": {
+      "question": "Görevleri yerine getirirken önemli olan",
+      "optionA": "Verimlilik ve mantık",
+      "optionB": "Ekip çalışması ve atmosfer",
+      "category": "T/F"
+    },
+    "MBTIQuestion15": {
+      "question": "Karar verirken",
+      "optionA": "Doğru ve yanlış temelinde yargılarım",
+      "optionB": "Başkalarının duygularını dikkate alırım",
+      "category": "T/F"
+    },
+    "MBTIQuestion16": {
+      "question": "Program yönetimi",
+      "optionA": "Önceden plan yapmayı ve buna bağlı kalmayı severim",
+      "optionB": "Esnek ve spontane hareket ederim",
+      "category": "J/P"
+    },
+    "MBTIQuestion17": {
+      "question": "Seyahate çıkarken",
+      "optionA": "Detaylı planlar yaparım",
+      "optionB": "Anlık olarak karar veririm",
+      "category": "J/P"
+    },
+    "MBTIQuestion18": {
+      "question": "Bir teslim tarihi olduğunda",
+      "optionA": "Erken bitirmeyi tercih ederim",
+      "optionB": "Son ana kadar esnek bir şekilde ayarlarım",
+      "category": "J/P"
+    },
+    "MBTIQuestion19": {
+      "question": "Tercih edilen ortam",
+      "optionA": "Düzenli ve temiz bir alan",
+      "optionB": "Özgür bir atmosfere sahip alan",
+      "category": "J/P"
+    },
+    "MBTIQuestion20": {
+      "question": "Planlar değiştiğinde",
+      "optionA": "Rahatsız hissederim",
+      "optionB": "Esnek bir şekilde uyum sağlarım",
+      "category": "J/P"
+    }
+  },
+  "mbtiResult": {
+    "quickInfo": "📚 Hızlı Öğrenme Bilgisi",
+    "learningGuide": "🎯 Öğrenme Yöntemi Rehberi",
+    "consultingSummary": "💡 Öğrenme Danışmanlığı Özeti",
+    "recommendedTime": "Önerilen Çalışma Zamanı",
+    "dailyStudyTime": "Önerilen Günlük Çalışma Saati",
+    "strongSubjects": "Güçlü Dersler",
+    "weakSubjects": "Zayıf Dersler",
+    "learningMethod": "Öğrenme Yöntemi",
+    "timeManagement": "Zaman Yönetimi",
+    "analysisTitle": "MBTI Öğrenme Stili Analiz Raporu",
+    "analysisResult": "Öğrenme Türü Analiz Sonucu",
+    "confirm": "Onayla",
+    "shareComplete": "Paylaşım tamamlandı",
+    "shareFailed": "Paylaşım başarısız",
+    "myMBTIStyle": "MBTI Öğrenme Stilim",
+    "CheckMyMBTI": "MBTI öğrenme stili sonucumu kontrol et!\n#StudyDuck #MBTIÖğrenme",
+    "MBTILearningStyleTest": "MBTI Öğrenme Stili Testi",
+    "question": "Soru",
+    "MBTINotTest": "Henüz MBTI testi yapmadınız. Lütfen testi yapın.",
+    "error": "Hata",
+    "Tryagain": "Tekrar dene",
+    "Failedtoloadthequestion": "Soru yüklenemedi.",
+    "GoTest": "Teste Git",
+    "permissionDenied": "İzin reddedildi",
+    "permissionTitle": "İzin",
+    "openSettings": "Ayarları Aç"
+  },
+  "mbtiTypeResult": {
+    "ISTJ": {
+      "learningMethod": "Sistematik ve mantıksal yaklaşımları tercih eder, planlı öğrenme önemlidir.",
+      "timeManagement": "Belirlenmiş bir programa uymak verimlidir.",
+      "recommendedTime": "Sabah veya akşam, sessiz ortam",
+      "dailyStudyTime": "2~4 saat",
+      "strongSubjects": "Matematik, Fen, Tarih",
+      "weakSubjects": "Edebiyat, Sanat, Felsefe",
+      "consultingSummary": "ISTJ, kapsamlı planlama ve sistematik yaklaşımlarla etkili bir şekilde öğrenebilir. Matematik, fen ve tarih gibi derslerde mükemmel performans gösterir. Düzenli bir zaman diliminde ve ortamda tutarlı bir şekilde çalışmak önemlidir; pratik ve mantıksal derslerde güçlüdür. Edebiyat, sanat ve felsefe gibi yaratıcı ve duygusal derslerde zorlanabilir, bu nedenle bu dersleri pratik örneklerle öğrenmek etkili olur. Günlük sabit zamanlarda çalışarak ve hedefler koyarak büyük sonuçlar elde edebilir."
+    },
+    "ISFJ": {
+      "learningMethod": "Tekrarlı öğrenme ve detaylara dikkat etme yoluyla etkilidir.",
+      "timeManagement": "Önceden plan yapmak ve buna uymak önemlidir.",
+      "recommendedTime": "Öğleden sonra, sabit ortam",
+      "dailyStudyTime": "2~3 saat",
+      "strongSubjects": "Tarih, Biyoloji, Sosyal Bilgiler, Edebiyat",
+      "weakSubjects": "Matematik, Fizik, Beden Eğitimi",
+      "consultingSummary": "ISFJ, tekrarlı öğrenme yoluyla sonuç elde edebilir. Tarih, edebiyat ve sosyal bilgiler gibi derslerde mükemmel performans gösterir ve detaylara dikkat ederek doğru bir şekilde öğrenebilir. Matematik ve fizik gibi teorik ve soyut dersler zorlayıcı olabilir. Günlük planları belirlemek ve bunlara tutarlı bir şekilde uymak iyidir; ilerleme yavaş olsa bile bir dersi tamamen bitirmek önemlidir. Sabit bir ortamda odaklanarak sonuç elde edebilir."
+    },
+    "INFJ": {
+      "learningMethod": "Derin anlayış ve içgörüye değer verir, anlam bulma yoluyla etkilidir.",
+      "timeManagement": "Uzun vadeli hedef belirleme ve öz-yansıtma gerektirir.",
+      "recommendedTime": "Gece, sessiz alan",
+      "dailyStudyTime": "3~5 saat",
+      "strongSubjects": "Edebiyat, Felsefe, Psikoloji",
+      "weakSubjects": "Matematik, Fizik",
+      "consultingSummary": "INFJ, derin keşif ve içgörü yoluyla öğrenir. Edebiyat, felsefe ve psikoloji gibi derslerde başarılıdır. Öğrenirken anlamlı bağlantılar arar, bu nedenle motivasyon önemlidir. Matematik veya fizik gibi somut dersler zorlayıcı olabilir; bu derslere temel kavramları parçalayarak yaklaşmak faydalıdır. Öz-yansıtma yoluyla öğrenme yöntemlerini sürekli ayarlar, uzun vadeli hedeflere odaklanır ve sürekli gelişim gösterir."
+    },
+    "INTJ": {
+      "learningMethod": "Mantıksal ve sistematik öğrenmeyi tercih eder, stratejik yaklaşım önemlidir.",
+      "timeManagement": "Uzun vadeli planlar yapmalı ve zamanı verimli bir şekilde dağıtmalıdır.",
+      "recommendedTime": "Şafak veya akşam",
+      "dailyStudyTime": "4~6 saat",
+      "strongSubjects": "Matematik, Fen, Mantık",
+      "weakSubjects": "Beden Eğitimi, Sanat",
+      "consultingSummary": "INTJ, kapsamlı planlama ve stratejik yaklaşımlarla etkili bir şekilde öğrenebilir. Matematik, fen ve mantık gibi derslerde mükemmel performans gösterir. Bağımsız öğrenme yoluyla derin anlayış elde edebilir. Ancak, aşırı mükemmeliyetçi olabilir, bu da öğrenme hızını yavaşlatabilir. Beden eğitimi ve sanat gibi derslerde zorlanabilir, bu nedenle bu derslere pratik örneklerle yaklaşmak etkili olur. Gerçekçi hedefler ve son teslim tarihleri belirlemek öğrenme verimliliğini maksimize edebilir."
+    },
+    "ISTP": {
+      "learningMethod": "Uygulamalı deneyim ve pratik yoluyla etkilidir.",
+      "timeManagement": "Spontane öğrenmeyi tercih eder, esnek planlar gerektirir.",
+      "recommendedTime": "Gündüz, aktif ortam",
+      "dailyStudyTime": "2~4 saat",
+      "strongSubjects": "Mühendislik, Fizik, Bilgisayar Bilimi",
+      "weakSubjects": "Felsefe, Edebiyat",
+      "consultingSummary": "ISTP, uygulamalı deneyim ve pratik yoluyla hızlı bir şekilde öğrenebilir. Mühendislik, fizik ve bilgisayar bilimi gibi pratik ve mantıksal derslerde güçlüdür. Ancak, felsefe ve edebiyat gibi teorik dersler zorlayıcı olabilir, bu nedenle bu derslere pratik örneklerle yaklaşmak etkili olur. Zaman yönetimi ve öğrenme planlarında esneklik sağlamak önemlidir ve odaklanabilecekleri bir ortam yaratılmalıdır."
+    },
+    "ISFP": {
+      "learningMethod": "Duyusal ve pratik yaklaşımları tercih eder, pratik öğrenmeyi sever.",
+      "timeManagement": "Özgür öğrenme yoluyla etkilidir, ancak temel planlama gereklidir.",
+      "recommendedTime": "Öğleden sonra veya akşam",
+      "dailyStudyTime": "2~3 saat",
+      "strongSubjects": "Sanat, Tasarım, Biyoloji",
+      "weakSubjects": "Matematik, Mantık",
+      "consultingSummary": "ISFP, yaratıcı ve duyusal yaklaşımlarla etkili bir şekilde öğrenebilir. Sanat, tasarım ve biyoloji gibi yaratıcı ve sezgisel derslerde mükemmel performans gösterir. Matematik ve mantık gibi teorik ve analitik dersler zorlayıcı olabilir, bu nedenle bu derslere pratik örneklerle yaklaşmak etkili olur. Özgür ve esnek öğrenme yöntemleri avantajlıdır ve bağımsız bir şekilde öğrenmeye devam etmek önemlidir."
+    },
+    "INFP": {
+      "learningMethod": "Duygusal ve anlamlı öğrenmeyi tercih eder, derin keşif yapmaktan hoşlanır.",
+      "timeManagement": "Kendi hızını korumak önemlidir.",
+      "recommendedTime": "Gece, sessiz alan",
+      "dailyStudyTime": "3~5 saat",
+      "strongSubjects": "Edebiyat, Psikoloji, Sosyoloji",
+      "weakSubjects": "Matematik, Fen",
+      "consultingSummary": "INFP, öğrenmeye yaratıcı ve tutkulu bir şekilde yaklaşır. Edebiyat, psikoloji ve sosyoloji gibi insanlarla ilgili derslerde mükemmel performans gösterir ve yeni fikirler aracılığıyla öğrenmeye devam eder. Matematik ve fen gibi hesaplamalı ve yapılandırılmış dersler zorlayıcı olabilir. Esnek planlama ve sık sık değişen öğrenme yöntemleri etkilidir; öğrenmekten keyif almak ve yaratıcı bir şekilde yaklaşmak önemlidir."
+    },
+    "INTP": {
+      "learningMethod": "Teorik kavramları keşfetme ve deneysel yaklaşımlar yoluyla etkilidir.",
+      "timeManagement": "Esnek programlar gerektirir, bazen spontane öğrenme denemeleri yapar.",
+      "recommendedTime": "Şafak, sessiz ortam",
+      "dailyStudyTime": "4~6 saat",
+      "strongSubjects": "Felsefe, Fen, Matematik",
+      "weakSubjects": "Sanat, Beden Eğitimi",
+      "consultingSummary": "INTP, mantıksal ve teorik yaklaşımlarla ilerler, problemleri farklı açılardan çözmede güçlüdür. Felsefe, fen ve matematik gibi derslerde mükemmel performans gösterir, karmaşık problemleri çoklu açılardan çözmekten keyif alır. Sanat ve beden eğitimi gibi duygusal ve pratik dersler zorlayıcı olabilir, bu nedenle bu derslere daha somut ve pratik örneklerle yaklaşmak etkili olur. Özgür zaman yönetimi ve spontane öğrenme de etkilidir."
+    },
+    "ESTP": {
+      "learningMethod": "Deneysel ve sezgisel yaklaşımları tercih eder, aktif öğrenme yoluyla etkilidir.",
+      "timeManagement": "Esnek planlar yapar ve spontane öğrenme denemeleri yapar.",
+      "recommendedTime": "Gündüz, aktif ortam",
+      "dailyStudyTime": "3~5 saat",
+      "strongSubjects": "Fizik, Matematik, Mühendislik",
+      "weakSubjects": "Edebiyat, Felsefe",
+      "consultingSummary": "ESTP, deneysel yöntemlerle öğrenmede güçlüdür. Fizik, mühendislik ve matematik gibi derslerde başarılıdır, gerçek problemleri çözerek öğrenmeye yaklaşır. Edebiyat ve felsefe gibi soyut dersler zorlayıcı olabilir. Aktif ve deneysel bir ortamda öğrenmek idealdir ve esnek zaman planlaması etkilidir."
+    },
+    "ESFP": {
+      "learningMethod": "Duyusal ve pratik yaklaşımları tercih eder, aktif ve keyifli bir şekilde öğrenir.",
+      "timeManagement": "Özgür planlama ile öğrenmekten keyif alır.",
+      "recommendedTime": "Öğleden sonra, aktif ortam",
+      "dailyStudyTime": "3~4 saat",
+      "strongSubjects": "Sanat, Sosyal Bilgiler, Biyoloji",
+      "weakSubjects": "Matematik, Fizik",
+      "consultingSummary": "ESFP, pratik ve duyusal öğrenmeyi tercih eder. Sanat, sosyal bilgiler ve biyoloji gibi yaratıcı ve sezgisel derslerde mükemmel performans gösterir. Matematik ve fizik gibi teorik dersler zorlayıcı olabilir, bu nedenle daha pratik bir yaklaşım gereklidir. Öğrenme keyifli ve aktif olduğunda etkilidir; özgür zaman yönetimi ve yaratıcı yöntemlerle öğrenmeye devam etmek önemlidir."
+    },
+    "ENFP": {
+      "learningMethod": "Yaratıcı ve tutkulu yaklaşımları tercih eder, yeni fikirleri denemekten hoşlanır.",
+      "timeManagement": "Esnek planlama ve sık değişikliklerle öğrenir.",
+      "recommendedTime": "Öğleden sonra, yaratıcı ortam",
+      "dailyStudyTime": "3~5 saat",
+      "strongSubjects": "Edebiyat, Psikoloji, Sosyoloji",
+      "weakSubjects": "Matematik, Fen",
+      "consultingSummary": "ENFP, öğrenmeye yaratıcı ve tutkulu bir şekilde yaklaşır. Edebiyat, psikoloji ve sosyoloji gibi insanlarla ilgili derslerde mükemmel performans gösterir ve yeni fikirler aracılığıyla öğrenmeye devam eder. Matematik ve fen gibi hesaplamalı ve yapılandırılmış dersler zorlayıcı olabilir. Esnek planlama ve sık sık değişen öğrenme yöntemleri etkilidir; öğrenmekten keyif almak ve yaratıcı bir şekilde yaklaşmak önemlidir."
+    },
+    "ENTP": {
+      "learningMethod": "Mantıksal ve teorik yaklaşımları tercih eder, problemleri farklı açılardan çözer.",
+      "timeManagement": "Özgür zaman yönetimi gerektirir, bazen spontane öğrenme denemeleri yapar.",
+      "recommendedTime": "Akşam, uyarıcı ortam",
+      "dailyStudyTime": "4~6 saat",
+      "strongSubjects": "Felsefe, Fen, Matematik",
+      "weakSubjects": "Sanat, Beden Eğitimi",
+      "consultingSummary": "ENTP, mantıksal ve teorik yaklaşımlarla ilerler, problemleri farklı açılardan çözmede güçlüdür. Felsefe, fen ve matematik gibi derslerde mükemmel performans gösterir, karmaşık problemleri çoklu açılardan çözmekten keyif alır. Sanat ve beden eğitimi gibi duygusal ve pratik dersler zorlayıcı olabilir, bu nedenle bu derslere daha somut ve pratik örneklerle yaklaşmak etkili olur. Özgür zaman yönetimi ve spontane öğrenme de etkilidir."
+    },
+    "ESTJ": {
+      "learningMethod": "Yapılandırılmış ve sistematik yaklaşımları tercih eder, net hedef belirleme ve planlama önemlidir.",
+      "timeManagement": "Sıkı programlarla etkilidir.",
+      "recommendedTime": "Sabah, düzenli ortam",
+      "dailyStudyTime": "3~5 saat",
+      "strongSubjects": "Matematik, İşletme, Ekonomi",
+      "weakSubjects": "Sanat, Psikoloji",
+      "consultingSummary": "ESTJ, oldukça yapılandırılmış ve sistematik öğrenme yöntemlerini tercih eder. Matematik, işletme ve ekonomi gibi pratik ve somut derslerde mükemmel performans gösterir. Ancak, sanat ve psikoloji gibi yaratıcı ve duygusal dersler zorlayıcı olabilir. Net hedefler belirlemek ve zamanı sıkı bir şekilde yönetmek önemlidir; verimli öğrenme planlarıyla ilerleyerek yüksek performans elde edebilir."
+    },
+    "ESFJ": {
+      "learningMethod": "Sosyal ve iş birliğine dayalı yaklaşımları tercih eder, başkalarıyla öğrenme yoluyla etkilidir.",
+      "timeManagement": "Önceden plan yapar ve insanlarla etkileşim yoluyla öğrenir.",
+      "recommendedTime": "Öğleden sonra, rahat ortam",
+      "dailyStudyTime": "3~4 saat",
+      "strongSubjects": "Sosyoloji, Tarih, Dilbilim",
+      "weakSubjects": "Matematik, Fizik",
+      "consultingSummary": "ESFJ, sosyal ve iş birliğine dayalı öğrenme yöntemleriyle sonuç elde edebilir. Sosyoloji, tarih ve dilbilim gibi derslerde mükemmel performans gösterir, başkalarıyla etkileşim yoluyla öğrenmekten keyif alır. Matematik ve fizik gibi dersler zorlayıcı olabilir, bu nedenle daha somut ve sistematik bir yaklaşım gereklidir. Başkalarıyla veya grup aktivitelerinde öğrenme, öğrenme etkinliğini maksimize edebilir."
+    },
+    "ENFJ": {
+      "learningMethod": "İnsanlarla iletişime değer verir, duygusal ve motivasyonel yönlere odaklanır.",
+      "timeManagement": "İnsanlarla etkileşim ve iş birliği yoluyla verimli bir şekilde öğrenir.",
+      "recommendedTime": "Sabah, pozitif ortam",
+      "dailyStudyTime": "3~5 saat",
+      "strongSubjects": "Psikoloji, Edebiyat, Sosyoloji",
+      "weakSubjects": "Matematik, Fizik",
+      "consultingSummary": "ENFJ, insanlarla iletişim yoluyla ilerler. Psikoloji, edebiyat ve sosyoloji gibi derslerde mükemmel performans gösterir, öğrenme sırasında fikir alışverişine ve iş birliğine değer verir. Matematik ve fizik gibi dersler zorlayıcı olabilir, bu nedenle bu derslere duygusal ve sezgisel yöntemlerle yaklaşmak faydalıdır. Pozitif ve iş birliğine dayalı bir ortamda öğrenme daha fazla motivasyon sağlayabilir."
+    },
+    "ENTJ": {
+      "learningMethod": "Yapılandırılmış ve hedef odaklı yaklaşımları tercih eder, verimli stratejiler belirler.",
+      "timeManagement": "Sıkı zaman yönetimi ve planlama ile öğrenir.",
+      "recommendedTime": "Sabah, odaklanmış ortam",
+      "dailyStudyTime": "4~6 saat",
+      "strongSubjects": "İşletme, Ekonomi, Matematik",
+      "weakSubjects": "Sanat, Edebiyat",
+      "consultingSummary": "ENTJ, net hedef belirleme ve yapılandırılmış yaklaşımları öğrenmede tercih eder. İşletme, ekonomi ve matematik gibi mantıksal ve analitik derslerde mükemmel performans gösterir. Sanat ve edebiyat gibi yaratıcı ve duygusal dersler zorlayıcı olabilir, bu nedenle daha pratik ve yapılandırılmış bir öğrenme yöntemi gereklidir. Sıkı zaman yönetimi ve verimli planlama önemlidir, her zaman net hedefler belirleyerek yoğun bir şekilde öğrenmeye odaklanır."
+    }
+  },
+  "MBTIResoltScreen": {
+    "MyMBTIresult": "MBTI sonucum"
+  },
+  "License": {
+    "License": "Lisans"
+  },
+  "BreathingExercise": {
+    "Intro": "Bu nefes alma tekniği Dr. Andrew Weil tarafından tanıtılmıştır. \nSinir sistemini hızla sakinleştirmede, stresi azaltmada ve konsantrasyonu artırmada etkilidir. \n\n Şimdi 4-7-8 nefes egzersizine geçeceğiz.",
+    "Inhale": "Ağzınızı kapatın ve burnunuzdan 4 saniye boyunca yavaşça nefes alın.",
+    "Hold": "Nefesinizi 7 saniye tutun.",
+    "Exhale": "Ağzınızdan 8 saniye boyunca yavaşça ve tamamen nefes verin, \"whoosh\" sesi çıkararak.",
+    "Completed": "Nefes egzersizi tamamlandı!",
+    "Repetition": "Tekrar"
+  },
+  "Common": {
+    "Advertisement": "4-7-8 Nefes Egzersizi",
+    "Close": "Öğrenmeye Başla",
+    "Retry": "Tekrar Dene"
+  },
+  "study_group": {
+    "worker": "Çalışan",
+    "university_student": "Üniversite Öğrencisi",
+    "high_school_3rd": "Lise Son Sınıf",
+    "high_school_2nd": "Lise İkinci Sınıf",
+    "high_school_1st": "Lise Birinci Sınıf",
+    "middle_school_student": "Ortaokul Öğrencisi",
+    "elementary_student": "İlkokul Öğrencisi"
+  },
+  "StudyGrass": {
+    "MonthRange": "{0} - {1}",
+    "StudyTime": "Çalışma Süresi",
+    "Duration": {
+      "Zero": "0s",
+      "UnderOneHour": "~1s",
+      "UnderTwoHours": "~2s",
+      "UnderFourHours": "~4s",
+      "OverFourHours": "4s+"
+    }
+  }
+}

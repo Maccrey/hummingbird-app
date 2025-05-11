@@ -1,0 +1,606 @@
+{
+  "DailyStatistics": {
+    "Error": "Fel vid laddning av data: {0}",
+    "NoData": "Ingen data registrerad idag."
+  },
+  "DailySummary": {
+    "GoalStudyTime": "Måltid för studier",
+    "StudyTimeToday": "Studietid idag",
+    "TodaySummary": "Sammanfattning av dagens studier"
+  },
+  "DDayAddScreen": {
+    "Add": "Lägg till",
+    "Cancel": "Avbryt",
+    "Color": "Färg:",
+    "Confirm": "Bekräfta",
+    "DDayAdd": "Lägg till D-dag",
+    "Edit": "Redigera",
+    "FillInAllFields": "Vänligen fyll i alla fält.",
+    "GoalDate": "Måldatum:",
+    "GoalTime": "Måltid:",
+    "GoalTitle": "Måltitel",
+    "Save": "Spara",
+    "SelectDate": "Välj datum",
+    "SelectTime": "Välj tid"
+  },
+  "DDayListTile": {
+    "AreYouSure": "Är du säker på att du vill ta bort ",
+    "Cancel": "Avbryt",
+    "Confirm": "Bekräfta",
+    "Delete": "Ta bort",
+    "DeleteConfirmationSuffix": "?",
+    "Edit": "Redigera",
+    "GoalDate": "Måldatum:",
+    "OfflineEditDeleteError": "Redigering och borttagning är inte tillgängligt i offline-läge.",
+    "OfflineStatus": "Offline-status"
+  },
+  "DDayUpdateScreen": {
+    "Color": "Färg:",
+    "DDayEdit": "Redigera D-dag",
+    "FillInAllFields": "Vänligen fyll i alla fält.",
+    "GoalDate": "Måldatum:",
+    "GoalTime": "Måltid:",
+    "GoalTitle": "Måltitel",
+    "Save": "Spara"
+  },
+  "Dialog": {
+    "Cancel": "Avbryt",
+    "Confirm": "Bekräfta",
+    "Focus!": "Fokusera!",
+    "YouarestudyingPutyourphonedownandfocus": "Du studerar.\nLägg ner telefonen och fokusera.",
+    "restoreTimer": "Det finns en befintlig timer. Vill du återställa den?",
+    "LogoutDialog": "Är du säker på att du vill logga ut?",
+    "DeleteUserDialog": "Är du säker på att du vill radera ditt konto?"
+  },
+  "HomeSegmentBar": {
+    "Dday": "D-dag",
+    "Summary": "Sammanfattning",
+    "Timer": "Timer"
+  },
+  "InquiryButtonWidget": {
+    "ContactUs": "Kontakta oss"
+  },
+  "LogoutButtonWidget": {
+    "Logout": "Logga ut"
+  },
+  "DeleteUserButtonWidget": {
+    "DeleteUser": "Radera konto"
+  },
+  "MonthlyStatisticsScreen": {
+    "noData": "Ingen data registrerad."
+  },
+  "NavigationBar": {
+    "Home": "Hem",
+    "More": "Mer",
+    "Social": "Rankning",
+    "Statistics": "Statistik",
+    "Timer": "Timer"
+  },
+  "NotificationButton": {
+    "Alarm": "Alarm"
+  },
+  "PrivacyPolicyWidget": {
+    "PrivacyPolicy": "Integritetspolicy",
+    "URLCannotBeOpened": "Denna URL kan inte öppnas.",
+    "URLFailedToOpen": "Misslyckades med att öppna URL.",
+    "URLLaunchError": "Ett fel uppstod."
+  },
+  "ProfileInfoWidget": {
+    "birthDate": "Födelsedatum",
+    "birthDateHint": "Registrera ditt födelsedatum",
+    "nickName": "Smeknamn",
+    "nickNameHint": "Redigera profil",
+    "save": "SPARA",
+    "mbtiTest": "MBTI-test",
+    "NoMBTIResult": "Inga MBTI-resultat",
+    "country": "Land",
+    "selectCountry": "Välj land"
+  },
+  "ProfileSettingScreen": {
+    "loadingText": "Du gör ditt bästa idag med Study Duck..."
+  },
+  "Rank": {
+    "Rank": "Studierankning",
+    "NotReady": "Rankningsdata förbereds fortfarande!"
+  },
+  "SelectCountryButtonWidget": {
+    "Country": "Land",
+    "SouthKorea": "Sydkorea"
+  },
+  "SelectCountryContainerWidget": {
+    "FuturePlan": "Planerat för framtida uppdateringar",
+    "SouthKorea": "Sydkorea"
+  },
+  "SelectCountryScreen": {
+    "Country": "Land"
+  },
+  "SelectFontSizeButtonWidget": {
+    "FontSize": "Textstorlek",
+    "Large": "Stor",
+    "Medium": "Medel",
+    "Small": "Liten"
+  },
+  "SelectGoalDurationButtonWidget": {
+    "Complete": "Slutför",
+    "GoalStudyTime": "Måltid för studier",
+    "TimeSelection": "Välj tid"
+  },
+  "SelectGroupBottomSheet": {
+    "complete": "Slutför",
+    "selectGroup": "Välj grupp"
+  },
+  "SelectGroupButtonWidget": {
+    "Group": "Grupp",
+    "SelectGroupPrompt": "Välj en grupp"
+  },
+  "SelectGroupScreen": {
+    "Group": "Grupp"
+  },
+  "SelectLanguageButtonWidget": {
+    "Korean": "Koreanska",
+    "Language": "Språk"
+  },
+  "SelectLanguageContainerWidget": {
+    "FuturePlan": "Planerat för framtida uppdateringar",
+    "Korean": "Koreanska"
+  },
+  "SelectLanguageScreen": {
+    "Language": "Språk"
+  },
+  "SelectThemeButtonWidget": {
+    "FuturePlan": "Planerat för framtida uppdateringar",
+    "ThemeColor": "Temafärg"
+  },
+  "SetStudySettingWidget": {
+    "done": "Klar",
+    "goalDuration": "Måltid för studier",
+    "group": "Grupp",
+    "timePickerTitle": "Välj tid"
+  },
+  "SettingButton": {
+    "Setting": "Inställningar"
+  },
+  "SettingsScreen": {
+    "Settings": "Inställningar",
+    "AnimationSettings": "Animationsinställningar",
+    "whiteNoiseAnimation": "Vitt brus-animation",
+    "whiteNoiseAnimationDesc": "Visa lådanimation när vitt brus spelas"
+  },
+  "SetProfileWidget": {
+    "next": "Nästa",
+    "selectBirthDate": "Välj ditt födelsedatum",
+    "skip": "Hoppa över"
+  },
+  "SocialScreen": "Social skärm",
+  "SplashScreen": {
+    "message": "Du gör ditt bästa idag med Study Duck..."
+  },
+  "StatisticsScreen": {
+    "monthly": "Månatlig",
+    "weekly": "Veckovis"
+  },
+  "StudyBarChartWidget": {
+    "subjectStudyTime": "Studietid per ämne"
+  },
+  "StudyPieChartWidget": {
+    "subjectPercentage": "Ämnesprocent"
+  },
+  "StudySettingScreen": {
+    "complete": "Slutför",
+    "previous": "Föregående"
+  },
+  "SubjectAddScreen": {
+    "AddSubject": "Lägg till ämne",
+    "DuplicateSubject": "Detta ämne finns redan.",
+    "Save": "Spara",
+    "SelectColor": "Välj färg",
+    "SubjectName": "Ämnesnamn"
+  },
+  "SubjectList": {
+    "AddSubject": "Lägg till ämne",
+    "Cancel": "Avbryt",
+    "CannotUndoWarning": "Denna åtgärd kan inte ångras.",
+    "Confirm": "Bekräfta",
+    "Delete": "Ta bort",
+    "DeleteSubjectPrompt": "Är du säker på att du vill ta bort detta ämne?",
+    "Edit": "Redigera",
+    "EditSubject": "Redigera ämne",
+    "EnterSubjectName": "Ange ämnesnamn",
+    "SelectColor": "Välj färg",
+    "SelfStudy": "Självstudier",
+    "Subject": "Ämne",
+    "SubjectName": "Ämnesnamn"
+  },
+  "SubjectUpdateScreen": {
+    "EditSubject": "Redigera ämne",
+    "EnterSubjectName": "Vänligen ange ämnesnamn.",
+    "Save": "Spara",
+    "SelectColor": "Välj färg",
+    "SubjectName": "Ämnesnamn"
+  },
+  "SummaryWidget": {
+    "averageStudyTime": "Genomsnittlig studietid",
+    "totalStudyTime": "Total studietid"
+  },
+  "Timer": {
+    "Pause": "PAUS",
+    "SelfStudy": "Självstudier",
+    "Start": "START"
+  },
+  "TimerControlBar": {
+    "FocusMode": "Fokusläge",
+    "WhiteNoise": "Vitt brus"
+  },
+  "TimerSetting": {
+    "AutoFocusMode": "Automatiskt fokusläge",
+    "AutoBreathingExercise": "Automatiskt andningsövningsläge",
+    "TimerSetting": "Timerinställningar",
+    "TimerMode": "Timerläge"
+  },
+  "TotalDuratinosLineChartWidget": {
+    "totalStudyTime": "Total daglig studietid"
+  },
+  "UserProfileWidget": {
+    "profileEdit": "Redigera profil"
+  },
+  "WeeklyStatisticsScreen": {
+    "noData": "Ingen data registrerad."
+  },
+  "WhiteNoiseScreen": {
+    "Cafe": "Kafé",
+    "Rain": "Regn",
+    "Wind": "Vind",
+    "Fire": "Eld",
+    "Chime": "Klockspel",
+    "Stream": "Ström",
+    "Wave": "Vågor",
+    "Bird": "Fågel",
+    "Pen": "Penna",
+    "Keyboard": "Tangentbord",
+    "chooseYourWhiteNoise": "Välj ditt vita brus",
+    "WhiteNoise": "Vitt brus",
+    "No white noise playing": "Inget vitt brus spelas",
+    "Volume Control": "Volymkontroll",
+    "Close": "Stäng",
+    "Stop": "Stopp"
+  },
+  "getBrithDateText": {
+    "birthDate": "Födelsedatum",
+    "birthDateHint": "Registrera ditt födelsedatum"
+  },
+  "mbti": {
+    "MBTIQuestion1": {
+      "question": "När du träffar nya människor",
+      "optionA": "Jag känner mig energisk och glad",
+      "optionB": "Jag känner mig mer bekväm att vara ensam",
+      "category": "E/I"
+    },
+    "MBTIQuestion2": {
+      "question": "Hur laddar du upp på helgerna?",
+      "optionA": "Genom att umgås med vänner",
+      "optionB": "Genom att spendera tid ensam",
+      "category": "E/I"
+    },
+    "MBTIQuestion3": {
+      "question": "När du organiserar dina tankar",
+      "optionA": "Jag pratar högt för att organisera dem",
+      "optionB": "Jag organiserar dem tyst i mitt sinne",
+      "category": "E/I"
+    },
+    "MBTIQuestion4": {
+      "question": "Att tala inför många människor",
+      "optionA": "Känns naturligt och bekvämt",
+      "optionB": "Känns belastande och nervöst",
+      "category": "E/I"
+    },
+    "MBTIQuestion5": {
+      "question": "Om du reser ensam",
+      "optionA": "Kan det kännas tråkigt och ensamt",
+      "optionB": "Känns spännande och förväntansfullt",
+      "category": "E/I"
+    },
+    "MBTIQuestion6": {
+      "question": "När du lyssnar på förklaringar, vad är viktigt",
+      "optionA": "Specifika exempel och detaljer",
+      "optionB": "Det övergripande flödet och koncepten",
+      "category": "S/N"
+    },
+    "MBTIQuestion7": {
+      "question": "När du lär dig nya färdigheter",
+      "optionA": "Jag lär mig steg för steg genom att följa en guide",
+      "optionB": "Jag lär mig intuitivt genom praktisk erfarenhet",
+      "category": "S/N"
+    },
+    "MBTIQuestion8": {
+      "question": "I vardagen",
+      "optionA": "Jag föredrar bekanta miljöer med minimala förändringar",
+      "optionB": "Nya upplevelser och förändringar är mer intressanta",
+      "category": "S/N"
+    },
+    "MBTIQuestion9": {
+      "question": "När du arbetar eller studerar",
+      "optionA": "Jag kontrollerar detaljer noggrant",
+      "optionB": "Jag fokuserar på att förstå det övergripande flödet",
+      "category": "S/N"
+    },
+    "MBTIQuestion10": {
+      "question": "När du gör bedömningar",
+      "optionA": "Jag utvärderar nuet baserat på tidigare erfarenheter",
+      "optionB": "Framtida möjligheter är viktigare",
+      "category": "S/N"
+    },
+    "MBTIQuestion11": {
+      "question": "När du fattar viktiga beslut",
+      "optionA": "Jag värderar logik och objektiva fakta",
+      "optionB": "Jag tar hänsyn till känslor och relationer",
+      "category": "T/F"
+    },
+    "MBTIQuestion12": {
+      "question": "I debatter, vad är viktigt",
+      "optionA": "Att vinna med logik",
+      "optionB": "Att ta hänsyn till andras känslor",
+      "category": "T/F"
+    },
+    "MBTIQuestion13": {
+      "question": "När andra delar sina bekymmer",
+      "optionA": "Jag föreslår praktiska lösningar",
+      "optionB": "Jag känner empati med deras känslor",
+      "category": "T/F"
+    },
+    "MBTIQuestion14": {
+      "question": "När du utför uppgifter, vad är viktigt",
+      "optionA": "Effektivitet och logik",
+      "optionB": "Samarbete och atmosfär",
+      "category": "T/F"
+    },
+    "MBTIQuestion15": {
+      "question": "När du fattar beslut",
+      "optionA": "Jag bedömer baserat på rätt och fel",
+      "optionB": "Jag tar hänsyn till andras känslor",
+      "category": "T/F"
+    },
+    "MBTIQuestion16": {
+      "question": "Schemaläggning",
+      "optionA": "Jag gillar att planera i förväg och följa planen",
+      "optionB": "Jag agerar flexibelt och spontant",
+      "category": "J/P"
+    },
+    "MBTIQuestion17": {
+      "question": "När du reser",
+      "optionA": "Jag gör detaljerade planer",
+      "optionB": "Jag bestämmer spontant på plats",
+      "category": "J/P"
+    },
+    "MBTIQuestion18": {
+      "question": "När det finns en deadline",
+      "optionA": "Jag föredrar att slutföra tidigt",
+      "optionB": "Jag anpassar mig flexibelt fram till sista minuten",
+      "category": "J/P"
+    },
+    "MBTIQuestion19": {
+      "question": "Föredragen miljö",
+      "optionA": "Ett organiserat och rent utrymme",
+      "optionB": "Ett utrymme med fri atmosfär",
+      "category": "J/P"
+    },
+    "MBTIQuestion20": {
+      "question": "När planer ändras",
+      "optionA": "Jag känner mig obekväm",
+      "optionB": "Jag anpassar mig flexibelt",
+      "category": "J/P"
+    }
+  },
+  "mbtiResult": {
+    "quickInfo": "📚 Snabb studieinformation",
+    "learningGuide": "🎯 Guide för studiemetoder",
+    "consultingSummary": "💡 Sammanfattning av studievägledning",
+    "recommendedTime": "Rekommenderad studietid",
+    "dailyStudyTime": "Rekommenderade dagliga studietimmar",
+    "strongSubjects": "Starka ämnen",
+    "weakSubjects": "Svaga ämnen",
+    "learningMethod": "Studiemetod",
+    "timeManagement": "Tidsplanering",
+    "analysisTitle": "Rapport om analys av MBTI-studie stil",
+    "analysisResult": "Resultat av analys av studietyp",
+    "confirm": "Bekräfta",
+    "shareComplete": "Delning slutförd",
+    "shareFailed": "Delning misslyckades",
+    "myMBTIStyle": "Min MBTI-studie stil",
+    "CheckMyMBTI": "Kolla mitt MBTI-studie stil resultat!\n#StudyDuck #MBTILearning",
+    "MBTILearningStyleTest": "MBTI-studie stil test",
+    "question": "Fråga",
+    "MBTINotTest": "Du har inte gjort MBTI-testet ännu. Vänligen gör testet.",
+    "error": "Fel",
+    "Tryagain": "Försök igen",
+    "Failedtoloadthequestion": "Misslyckades med att ladda frågan.",
+    "GoTest": "Gå till testet",
+    "permissionDenied": "Tillstånd nekad",
+    "permissionTitle": "Tillstånd",
+    "openSettings": "Öppna inställningar"
+  },
+  "mbtiTypeResult": {
+    "ISTJ": {
+      "learningMethod": "Föredrar systematiska och logiska metoder, planering av studier är viktigt.",
+      "timeManagement": "Att följa ett fast schema är effektivt.",
+      "recommendedTime": "Morgon eller kväll, tyst miljö",
+      "dailyStudyTime": "2~4 timmar",
+      "strongSubjects": "Matematik, Naturvetenskap, Historia",
+      "weakSubjects": "Litteratur, Konst, Filosofi",
+      "consultingSummary": "ISTJ kan lära sig effektivt genom noggrann planering och systematiska metoder. De visar utmärkta resultat i ämnen som matematik, naturvetenskap och historia. Det är viktigt att studera konsekvent vid fasta tider och i en stabil miljö, där de visar styrkor i praktiska och logiska ämnen. De kan ha svårt med kreativa och känslomässiga ämnen som litteratur, konst och filosofi, så det är effektivt att närma sig dessa ämnen genom praktiska exempel. De kan uppnå stora resultat genom att studera regelbundet vid fasta tider varje dag och sätta mål."
+    },
+    "ISFJ": {
+      "learningMethod": "Effektiv genom upprepad inlärning och uppmärksamhet på detaljer.",
+      "timeManagement": "Det är viktigt att planera i förväg och följa planen.",
+      "recommendedTime": "Eftermiddag, stabil miljö",
+      "dailyStudyTime": "2~3 timmar",
+      "strongSubjects": "Historia, Biologi, Samhällskunskap, Litteratur",
+      "weakSubjects": "Matematik, Fysik, Idrott",
+      "consultingSummary": "ISFJ kan uppnå resultat genom upprepad inlärning. De visar utmärkta resultat i ämnen som historia, litteratur och samhällskunskap, och kan lära sig exakt genom att vara uppmärksam på detaljer. Teoretiska och abstrakta ämnen som matematik och fysik kan vara utmanande. Det är bra att sätta och följa dagliga planer konsekvent, och det är viktigt att slutföra ett ämne noggrant även om framstegen är långsamma. De kan uppnå resultat genom att fokusera i en stabil miljö."
+    },
+    "INFJ": {
+      "learningMethod": "Värderar djup förståelse och insikter, effektiv genom att finna mening.",
+      "timeManagement": "Kräver långsiktiga mål och självrannsakan.",
+      "recommendedTime": "Natt, tyst utrymme",
+      "dailyStudyTime": "3~5 timmar",
+      "strongSubjects": "Litteratur, Filosofi, Psykologi",
+      "weakSubjects": "Matematik, Fysik",
+      "consultingSummary": "INFJ lär sig genom djup utforskning och insikter. De utmärker sig i ämnen som litteratur, filosofi och psykologi. De söker meningsfulla kopplingar under studierna, så motivation är viktigt. Konkreta ämnen som matematik eller fysik kan vara utmanande, och det är användbart att närma sig dessa ämnen genom att bryta ner grundläggande koncept först. De justerar kontinuerligt studiemetoder genom självrannsakan, fokuserar på långsiktiga mål och kontinuerlig utveckling."
+    },
+    "INTJ": {
+      "learningMethod": "Föredrar logisk och systematisk inlärning, strategiskt tillvägagångssätt är viktigt.",
+      "timeManagement": "Måste sätta långsiktiga planer och fördela tiden effektivt.",
+      "recommendedTime": "Gryning eller kväll",
+      "dailyStudyTime": "4~6 timmar",
+      "strongSubjects": "Matematik, Naturvetenskap, Logik",
+      "weakSubjects": "Idrott, Konst",
+      "consultingSummary": "INTJ kan lära sig effektivt genom noggrann planering och strategiska metoder. De visar utmärkta resultat i ämnen som matematik, naturvetenskap och logik. De kan uppnå djup förståelse genom självständiga studier. Men de kan vara överdrivet perfektionistiska, vilket kan sakta ner inlärningstakten. De kan ha svårt med ämnen som idrott och konst, så det är effektivt att närma sig dessa ämnen genom praktiska exempel. Att sätta realistiska mål och deadlines kan maximera deras studieresultat."
+    },
+    "ISTP": {
+      "learningMethod": "Effektiv genom praktisk erfarenhet och praktik.",
+      "timeManagement": "Föredrar spontan inlärning, kräver flexibla planer.",
+      "recommendedTime": "Dagtid, aktiv miljö",
+      "dailyStudyTime": "2~4 timmar",
+      "strongSubjects": "Ingenjörsvetenskap, Fysik, Datavetenskap",
+      "weakSubjects": "Filosofi, Litteratur",
+      "consultingSummary": "ISTP kan lära sig snabbt genom praktisk erfarenhet och praktik. De visar styrkor i praktiska och logiska ämnen som ingenjörsvetenskap, fysik och datavetenskap. Men de kan tycka att teoretiska ämnen som filosofi och litteratur är utmanande, så det är effektivt att närma sig dessa ämnen genom praktiska exempel. Det är viktigt att behålla flexibilitet i tidsplanering och studieplaner och skapa en miljö där de kan fokusera."
+    },
+    "ISFP": {
+      "learningMethod": "Föredrar sensoriska och praktiska metoder, gillar praktisk inlärning.",
+      "timeManagement": "Effektiv genom fri inlärning, men grundläggande planering krävs.",
+      "recommendedTime": "Eftermiddag eller kväll",
+      "dailyStudyTime": "2~3 timmar",
+      "strongSubjects": "Konst, Design, Biologi",
+      "weakSubjects": "Matematik, Logik",
+      "consultingSummary": "ISFP kan lära sig effektivt genom kreativa och sensoriska metoder. De visar utmärkta resultat i kreativa och intuitiva ämnen som konst, design och biologi. Teoretiska och analytiska ämnen som matematik och logik kan vara utmanande, så det är effektivt att närma sig dessa ämnen genom praktiska exempel. Fria och flexibla studiemetoder är fördelaktiga, och det är viktigt att fortsätta lära sig självständigt."
+    },
+    "INFP": {
+      "learningMethod": "Föredrar emotionell och meningsfull inlärning, njuter av djup utforskning.",
+      "timeManagement": "Det är viktigt att behålla deras eget tempo.",
+      "recommendedTime": "Natt, tyst utrymme",
+      "dailyStudyTime": "3~5 timmar",
+      "strongSubjects": "Litteratur, Psykologi, Sociologi",
+      "weakSubjects": "Matematik, Naturvetenskap",
+      "consultingSummary": "INFP närmar sig studier kreativt och passionerat. De visar utmärkta resultat i ämnen relaterade till människor, som litteratur, psykologi och sociologi, och fortsätter lära sig genom nya idéer. Beräkningsbaserade och strukturerade ämnen som matematik och naturvetenskap kan vara utmanande. Flexibel planering och ofta ändrade studiemetoder är effektiva, och det är viktigt att njuta av lärandet och närma sig det kreativt."
+    },
+    "INTP": {
+      "learningMethod": "Effektiv genom utforskning av teoretiska koncept och experimentella metoder.",
+      "timeManagement": "Kräver flexibla scheman, ibland testar spontan inlärning.",
+      "recommendedTime": "Gryning, tyst miljö",
+      "dailyStudyTime": "4~6 timmar",
+      "strongSubjects": "Filosofi, Naturvetenskap, Matematik",
+      "weakSubjects": "Konst, Idrott",
+      "consultingSummary": "INTP avancerar genom logiska och teoretiska metoder, visar styrkor i att lösa problem från olika perspektiv. De visar utmärkta resultat i ämnen som filosofi, naturvetenskap och matematik, och njuter av att lösa komplexa problem från flera vinklar. Emotionella och praktiska ämnen som konst och idrott kan vara utmanande, så det är effektivt att närma sig dessa ämnen genom mer konkreta och praktiska exempel. Fri tidsplanering och spontan inlärning är också effektiva."
+    },
+    "ESTP": {
+      "learningMethod": "Föredrar experimentella och intuitiva metoder, effektiv genom aktiv inlärning.",
+      "timeManagement": "Planerar flexibelt och testar spontan inlärning.",
+      "recommendedTime": "Dagtid, aktiv miljö",
+      "dailyStudyTime": "3~5 timmar",
+      "strongSubjects": "Fysik, Matematik, Ingenjörsvetenskap",
+      "weakSubjects": "Litteratur, Filosofi",
+      "consultingSummary": "ESTP visar styrkor i inlärning genom experimentella metoder. De utmärker sig i ämnen som fysik, ingenjörsvetenskap och matematik, och närmar sig studier genom att lösa verkliga problem. Abstrakta ämnen som litteratur och filosofi kan vara utmanande. Det är idealiskt att studera i en aktiv och experimentell miljö, och flexibel tidsplanering är effektiv."
+    },
+    "ESFP": {
+      "learningMethod": "Föredrar sensoriska och praktiska metoder, lär sig aktivt och med glädje.",
+      "timeManagement": "Njuter av inlärning genom fri planering.",
+      "recommendedTime": "Eftermiddag, aktiv miljö",
+      "dailyStudyTime": "3~4 timmar",
+      "strongSubjects": "Konst, Samhällskunskap, Biologi",
+      "weakSubjects": "Matematik, Fysik",
+      "consultingSummary": "ESFP föredrar praktisk och sensorisk inlärning. De visar utmärkta resultat i kreativa och intuitiva ämnen som konst, samhällskunskap och biologi. Teoretiska ämnen som matematik och fysik kan vara utmanande, så en mer praktisk metod krävs. Inlärning är effektiv när den är rolig och aktiv, och det är viktigt att fortsätta lära sig med fri tidsplanering och kreativa metoder."
+    },
+    "ENFP": {
+      "learningMethod": "Föredrar kreativa och passionerade metoder, testar nya idéer.",
+      "timeManagement": "Lär sig genom flexibel planering och frekventa förändringar.",
+      "recommendedTime": "Eftermiddag, kreativ miljö",
+      "dailyStudyTime": "3~5 timmar",
+      "strongSubjects": "Litteratur, Psykologi, Sociologi",
+      "weakSubjects": "Matematik, Naturvetenskap",
+      "consultingSummary": "ENFP närmar sig studier kreativt och passionerat. De visar utmärkta resultat i ämnen relaterade till människor, som litteratur, psykologi och sociologi, och fortsätter lära sig genom nya idéer. Beräkningsbaserade och strukturerade ämnen som matematik och naturvetenskap kan vara utmanande. Flexibel planering och ofta ändrade studiemetoder är effektiva, och det är viktigt att njuta av lärandet och närma sig det kreativt."
+    },
+    "ENTP": {
+      "learningMethod": "Föredrar logiska och teoretiska metoder, löser problem från olika perspektiv.",
+      "timeManagement": "Kräver fri tidsplanering, ibland testar spontan inlärning.",
+      "recommendedTime": "Kväll, stimulerande miljö",
+      "dailyStudyTime": "4~6 timmar",
+      "strongSubjects": "Filosofi, Naturvetenskap, Matematik",
+      "weakSubjects": "Konst, Idrott",
+      "consultingSummary": "ENTP avancerar genom logiska och teoretiska metoder, visar styrkor i att lösa problem från olika perspektiv. De visar utmärkta resultat i ämnen som filosofi, naturvetenskap och matematik, och njuter av att lösa komplexa problem från flera vinklar. Emotionella och praktiska ämnen som konst och idrott kan vara utmanande, så det är effektivt att närma sig dessa ämnen genom mer konkreta och praktiska exempel. Fri tidsplanering och spontan inlärning är också effektiva."
+    },
+    "ESTJ": {
+      "learningMethod": "Föredrar strukturerade och systematiska metoder, tydlig målsättning och planering är viktigt.",
+      "timeManagement": "Effektiv genom strikta scheman.",
+      "recommendedTime": "Morgon, organiserad miljö",
+      "dailyStudyTime": "3~5 timmar",
+      "strongSubjects": "Matematik, Företagsekonomi, Ekonomi",
+      "weakSubjects": "Konst, Psykologi",
+      "consultingSummary": "ESTJ föredrar mycket strukturerade och systematiska studiemetoder. De visar utmärkta resultat i praktiska och konkreta ämnen som matematik, företagsekonomi och ekonomi. Men de kan tycka att kreativa och känslomässiga ämnen som konst och psykologi är utmanande. Det är viktigt att sätta tydliga mål och strikt hantera tiden, och de avancerar genom effektiva studieplaner för att uppnå hög prestation."
+    },
+    "ESFJ": {
+      "learningMethod": "Föredrar sociala och samarbetsbaserade metoder, lär sig effektivt tillsammans med andra.",
+      "timeManagement": "Planerar i förväg och lär sig genom interaktion med människor.",
+      "recommendedTime": "Eftermiddag, bekväm miljö",
+      "dailyStudyTime": "3~4 timmar",
+      "strongSubjects": "Sociologi, Historia, Lingvistik",
+      "weakSubjects": "Matematik, Fysik",
+      "consultingSummary": "ESFJ kan uppnå resultat genom sociala och samarbetsbaserade studiemetoder. De visar utmärkta resultat i ämnen som sociologi, historia och lingvistik, och njuter av att lära sig genom interaktion med andra. Ämnen som matematik och fysik kan vara utmanande, så en mer konkret och systematisk metod krävs. Att studera tillsammans med andra eller i gruppaktiviteter kan maximera deras studieeffektivitet."
+    },
+    "ENFJ": {
+      "learningMethod": "Värderar kommunikation med människor, fokuserar på emotionella och motiverande aspekter.",
+      "timeManagement": "Lär sig effektivt genom interaktion och samarbete med människor.",
+      "recommendedTime": "Morgon, positiv miljö",
+      "dailyStudyTime": "3~5 timmar",
+      "strongSubjects": "Psykologi, Litteratur, Sociologi",
+      "weakSubjects": "Matematik, Fysik",
+      "consultingSummary": "ENFJ avancerar genom kommunikation med människor. De visar utmärkta resultat i ämnen som psykologi, litteratur och sociologi, och värderar utbyte av idéer och samarbete med andra under studierna. Ämnen som matematik och fysik kan vara utmanande, så det är användbart att närma sig dessa ämnen genom emotionella och intuitiva metoder. Att studera i en positiv och samarbetsbaserad miljö kan ge mer motivation."
+    },
+    "ENTJ": {
+      "learningMethod": "Föredrar strukturerade och målinriktade metoder, sätter effektiva strategier.",
+      "timeManagement": "Lär sig genom strikt tidsplanering och planering.",
+      "recommendedTime": "Morgon, fokuserad miljö",
+      "dailyStudyTime": "4~6 timmar",
+      "strongSubjects": "Företagsekonomi, Ekonomi, Matematik",
+      "weakSubjects": "Konst, Litteratur",
+      "consultingSummary": "ENTJ föredrar tydlig målsättning och strukturerade metoder för inlärning. De visar utmärkta resultat i logiska och analytiska ämnen som företagsekonomi, ekonomi och matematik. Kreativa och känslomässiga ämnen som konst och litteratur kan vara utmanande, så en mer praktisk och strukturerad studiemetod krävs. Strikta tidsplanering och effektiv planering är viktigt, och de sätter alltid tydliga mål och fokuserar på intensiva studier."
+    }
+  },
+  "MBTIResoltScreen": {
+    "MyMBTIresult": "Mitt MBTI-resultat"
+  },
+  "License": {
+    "License": "Licens"
+  },
+  "BreathingExercise": {
+    "Intro": "Denna andningsteknik introducerades av Dr. Andrew Weil. \nDen är effektiv för att snabbt lugna nervsystemet, lindra stress och förbättra koncentrationen. \n\nVi kommer nu att gå vidare till andningsövningen 4-7-8.",
+    "Inhale": "Stäng munnen och andas in långsamt genom näsan i 4 sekunder.",
+    "Hold": "Håll andan i 7 sekunder.",
+    "Exhale": "Andas ut långsamt och helt genom munnen i 8 sekunder, gör ett \"whoosh\"-ljud.",
+    "Completed": "Andningsövning slutförd!",
+    "Repetition": "Upprepa"
+  },
+  "Common": {
+    "Advertisement": "Andningsövning 4-7-8",
+    "Close": "Börja studera",
+    "Retry": "Försök igen"
+  },
+  "study_group": {
+    "worker": "Arbetare",
+    "university_student": "Universitetsstudent",
+    "high_school_3rd": "Gymnasieelev (3:e året)",
+    "high_school_2nd": "Gymnasieelev (2:a året)",
+    "high_school_1st": "Gymnasieelev (1:a året)",
+    "middle_school_student": "Högstadieelev",
+    "elementary_student": "Grundskoleelev"
+  },
+  "StudyGrass": {
+    "MonthRange": "{0} - {1}",
+    "StudyTime": "Studietid",
+    "Duration": {
+      "Zero": "0h",
+      "UnderOneHour": "~1h",
+      "UnderTwoHours": "~2h",
+      "UnderFourHours": "~4h",
+      "OverFourHours": "4h+"
+    }
+  }
+}

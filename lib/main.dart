@@ -40,7 +40,12 @@ void main() async {
     'ar',
     'hi',
     'da',
-    'pt'
+    'pt',
+    'id',
+    'tr',
+    'ms',
+    'uk',
+    'sv'
   ];
   WidgetsFlutterBinding.ensureInitialized();
 

@@ -92,15 +92,34 @@ class LeaderboardWidget extends ConsumerWidget {
                         ),
                       ],
                     ),
-                    title: Text(
-                      (player["nickname"]?.isNotEmpty == true
-                              ? player["nickname"]
-                              : player["userId"]) ??
-                          "Unknown",
-                      style: TextStyle(color: Colors.black),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      textAlign: TextAlign.end,
+                    title: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        if (player["country"] != null)
+                          Padding(
+                            padding: const EdgeInsets.only(right: 8.0),
+                            child: Image.asset(
+                              'lib/core/imgs/flags/${player["country"]}.png',
+                              width: 24,
+                              height: 18,
+                              errorBuilder: (context, error, stackTrace) {
+                                return SizedBox.shrink();
+                              },
+                            ),
+                          ),
+                        Expanded(
+                          child: Text(
+                            (player["nickname"]?.isNotEmpty == true
+                                    ? player["nickname"]
+                                    : player["userId"]) ??
+                                "Unknown",
+                            style: TextStyle(color: Colors.black),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            textAlign: TextAlign.end,
+                          ),
+                        ),
+                      ],
                     ),
                     subtitle: Text(
                       "공부시간 : ${getFormatTime(player["totalElapsedTime"])}",

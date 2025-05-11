@@ -60,11 +60,9 @@ class _StudyGrassWidgetState extends State<StudyGrassWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8.0),
-        child: _buildContent(),
-      ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      child: _buildContent(),
     );
   }
 
@@ -79,33 +77,36 @@ class _StudyGrassWidgetState extends State<StudyGrassWidget> {
     }
 
     if (_error != null) {
-      return Center(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                tr('StudyGrass.Error'),
-                style: TextStyle(color: Colors.red),
-              ),
-              const SizedBox(height: 8),
-              TextButton(
-                onPressed: _loadStudyTimeData,
-                child: Text(tr('Common.Retry')),
-              ),
-            ],
+      return SingleChildScrollView(
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  tr('StudyGrass.Error'),
+                  style: TextStyle(color: Colors.red),
+                ),
+                const SizedBox(height: 8),
+                TextButton(
+                  onPressed: _loadStudyTimeData,
+                  child: Text(tr('Common.Retry')),
+                ),
+              ],
+            ),
           ),
         ),
       );
     }
 
-    return Column(
+    return SingleChildScrollView(
+        child: Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         GrassGrid(grassData: _grassData),
       ],
-    );
+    ));
   }
 }

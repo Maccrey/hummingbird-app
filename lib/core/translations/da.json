@@ -92,7 +92,9 @@
     "nickNameHint": "Rediger profil",
     "save": "GEM",
     "mbtiTest": "MBTI-test",
-    "NoMBTIResult": "Intet MBTI-resultat"
+    "NoMBTIResult": "Intet MBTI-resultat",
+    "country": "Land",
+    "selectCountry": "Vælg land"
   },
   "ProfileSettingScreen": {
     "loadingText": "Giv dit bedste i dag med Study Duck..."
@@ -159,7 +161,10 @@
     "Setting": "Indstillinger"
   },
   "SettingsScreen": {
-    "Settings": "Indstillinger"
+    "Settings": "Indstillinger",
+    "AnimationSettings": "Animationsindstillinger",
+    "whiteNoiseAnimation": "Hvid støj-animation",
+    "whiteNoiseAnimationDesc": "Vis skuffens animation når hvid støj afspilles"
   },
   "SetProfileWidget": {
     "next": "Næste",
@@ -229,7 +234,8 @@
   "TimerSetting": {
     "AutoFocusMode": "Automatisk fokus-tilstand",
     "AutoBreathingExercise": "Automatisk Fokusåndedrætstilstand",
-    "TimeerSetting": "Timerindstillinger"
+    "TimerSetting": "Timerindstilling",
+    "TimerMode": "Timertilstand"
   },
   "TotalDuratinosLineChartWidget": {
     "totalStudyTime": "Total studietid pr. dag"

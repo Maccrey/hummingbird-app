@@ -92,7 +92,9 @@
     "nickNameHint": "Profil bearbeiten",
     "save": "SPEICHERN",
     "mbtiTest": "MBTI-Test",
-    "NoMBTIResult": "Kein MBTI-Ergebnis"
+    "NoMBTIResult": "Kein MBTI-Ergebnis",
+    "country": "Land",
+    "selectCountry": "Land auswählen"
   },
   "ProfileSettingScreen": {
     "loadingText": "Gib heute dein Bestes mit Study Duck..."
@@ -159,7 +161,10 @@
     "Setting": "Einstellungen"
   },
   "SettingsScreen": {
-    "Settings": "Einstellungen"
+    "Settings": "Einstellungen",
+    "AnimationSettings": "Animationseinstellungen",
+    "whiteNoiseAnimation": "Weißes Rauschen Animation",
+    "whiteNoiseAnimationDesc": "Zeige Drawer-Animation, wenn weißes Rauschen abgespielt wird"
   },
   "SetProfileWidget": {
     "next": "Weiter",
@@ -229,7 +234,8 @@
   "TimerSetting": {
     "AutoFocusMode": "Automatischer Fokusmodus",
     "AutoBreathingExercise": "Automatische Atemübung",
-    "TimeerSetting": "Timer-Einstellungen"
+    "TimerSetting": "Timer-Einstellungen",
+    "TimerMode": "Timer-Modus"
   },
   "TotalDuratinosLineChartWidget": {
     "totalStudyTime": "Gesamte Lernzeit pro Tag"

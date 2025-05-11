@@ -92,7 +92,9 @@
     "nickNameHint": "प्रोफाइल संपादित करें",
     "save": "सहेजें",
     "mbtiTest": "MBTI परीक्षण",
-    "NoMBTIResult": "कोई MBTI परिणाम नहीं"
+    "NoMBTIResult": "कोई MBTI परिणाम नहीं",
+    "country": "देश",
+    "selectCountry": "देश चुनें"
   },
   "ProfileSettingScreen": {
     "loadingText": "आज स्टडी डक के साथ अपना सर्वश्रेष्ठ प्रयास कर रहे हैं..."
@@ -159,7 +161,10 @@
     "Setting": "सेटिंग्स"
   },
   "SettingsScreen": {
-    "Settings": "सेटिंग्स"
+    "Settings": "सेटिंग्स",
+    "AnimationSettings": "एनीमेशन सेटिंग्स",
+    "whiteNoiseAnimation": "व्हाइट नॉइज़ एनीमेशन",
+    "whiteNoiseAnimationDesc": "व्हाइट नॉइज़ चलने पर ड्रॉअर एनिमेशन दिखाएँ"
   },
   "SetProfileWidget": {
     "next": "अगला",
@@ -227,9 +232,10 @@
     "WhiteNoise": "श्वेत शोर"
   },
   "TimerSetting": {
-    "AutoFocusMode": "स्वचालित फोकस मोड",
-    "AutoBreathingExercise": "ऑटो फोकस ब्रीदिंग मोड",
-    "TimeerSetting": "टाइमर सेटिंग्स"
+    "AutoFocusMode": "ऑटो फोकस मोड",
+    "AutoBreathingExercise": "ऑटो ब्रेथिंग एक्सरसाइज मोड",
+    "TimerSetting": "टाइमर सेटिंग",
+    "TimerMode": "टाइमर मोड"
   },
   "TotalDuratinosLineChartWidget": {
     "totalStudyTime": "प्रति दिन कुल अध्ययन समय"

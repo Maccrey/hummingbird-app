@@ -35,6 +35,14 @@ Future<void> appInitialize() async {
   Hive.registerAdapter(StudySettingAdapter());
   await Hive.openBox<StudySetting>(BoxKeys.studySettingBoxKey);
 
-  Hive.registerAdapter(AppSettingAdapter());
+  // 기존 AppSettingAdapter 등록 전에 이미 등록된 어댑터가 있는지 확인
+  try {
+    // 커스텀 어댑터 등록 (이미 등록된 경우 예외 발생)
+    Hive.registerAdapter(AppSettingAdapter());
+  } catch (e) {
+    // 이미 등록된 경우 무시 (HiveError: TypeAdapter for type AppSetting is already registered.)
+    print('AppSettingAdapter 등록 오류 (이미 등록됨): $e');
+  }
+
   await Hive.openBox<AppSetting>(BoxKeys.appSettingBoxKey);
 }

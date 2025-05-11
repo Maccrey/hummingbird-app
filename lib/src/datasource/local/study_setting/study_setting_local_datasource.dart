@@ -14,6 +14,7 @@ class StudySettingLocalDatasource {
       final studySetting = _box.get(_key);
       return studySetting ?? StudySetting();
     } catch (e) {
+      _box.delete(_key);
       return StudySetting();
     }
   }

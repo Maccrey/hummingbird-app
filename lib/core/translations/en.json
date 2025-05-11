@@ -92,7 +92,9 @@
     "nickNameHint": "Edit Profile",
     "save": "SAVE",
     "mbtiTest": "MBTI Test",
-    "NoMBTIResult": "No MBTI result"
+    "NoMBTIResult": "No MBTI result",
+    "country": "Country",
+    "selectCountry": "Select Country"
   },
   "ProfileSettingScreen": {
     "loadingText": "Doing your best today with Study Duck..."
@@ -159,7 +161,10 @@
     "Setting": "Settings"
   },
   "SettingsScreen": {
-    "Settings": "Settings"
+    "Settings": "Settings",
+    "AnimationSettings": "Animation Settings",
+    "whiteNoiseAnimation": "White Noise Animation",
+    "whiteNoiseAnimationDesc": "Show drawer animation when white noise is playing"
   },
   "SetProfileWidget": {
     "next": "Next",
@@ -227,9 +232,10 @@
     "WhiteNoise": "White noise"
   },
   "TimerSetting": {
-    "AutoFocusMode": "Auto focus mode",
-    "AutoBreathingExercise": "Auto Focus Breathing Mode",
-    "TimeerSetting": "Timer settings"
+    "AutoFocusMode": "Auto Focus Mode",
+    "AutoBreathingExercise": "Auto Breathing Exercise Mode",
+    "TimerSetting": "Timer Setting",
+    "TimerMode": "Timer Mode"
   },
   "TotalDuratinosLineChartWidget": {
     "totalStudyTime": "Total study time per day"
@@ -251,8 +257,8 @@
     "Bird": "bird",
     "Pen": "Pen",
     "Keyboard": "Keyboard",
-    "chooseYourWhiteNoise": "hooseYourWhiteNoise",
-    "WhiteNoise": "whiteNoise",
+    "chooseYourWhiteNoise": "Choose Your White Noise",
+    "WhiteNoise": "White Noise",
     "No white noise playing": "No white noise playing",
     "Volume Control": "Volume Control",
     "Close": "Close",
